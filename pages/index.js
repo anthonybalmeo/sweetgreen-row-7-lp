@@ -2,10 +2,12 @@ import React from 'react'
 
 import styled, { injectGlobal } from 'styled-components'
 
-import { Timeline } from '../components/Timeline'
+import { TimelineMobile } from '../components/TimelineMobile'
 
 import SweetlifeMedium from '../assets/fonts/Sweetlife-Medium.woff2'
 import GothamBook from '../assets/fonts/Gotham-Book.woff2'
+import FlamaCondensed from '../assets/fonts/FlamaCondensed-Medium.woff2'
+import { Mobile } from '../components/MediaQueries'
 
 import salad from '../assets/salads.jpg'
 
@@ -13,12 +15,17 @@ const Title = styled.h1`
   color: red;
   font-size: 50px;
 `
-
+const HeaderImg = styled.img`
+  src: url(${props => props.src});
+  margin-bottom: 10rem;
+`
 export default () =>
   <React.Fragment>
     <Title>sweetgreen</Title>
-    <img src={salad} alt="a salad" />
-    <Timeline />
+    <HeaderImg src={salad} />
+    <Mobile>
+      <TimelineMobile />
+    </Mobile>
   </React.Fragment>
 
 injectGlobal`
@@ -29,6 +36,7 @@ injectGlobal`
     width: 100%;
     overflow-x: hidden;
     font-family: 'Gotham Book';
+    background: #F8F8F6;
   }
 
   @font-face {
@@ -41,6 +49,13 @@ injectGlobal`
   @font-face {
     font-family: 'Gotham Book';
     src: url('${GothamBook}') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Flama Condensed';
+    src: url('${FlamaCondensed}') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
