@@ -10,6 +10,8 @@ import twitter from '../assets/social-twitter.svg'
 import fb from '../assets/social-fb.svg'
 import youtube from '../assets/social-youtube.svg'
 
+import { EmailCapture } from './EmailCapture'
+
 injectGlobal`
   #footer-global .footer-logo path,#footer-global .link-android .inline-icon path,#footer-global .link-ios .inline-icon path,#footer-global .social-link path{
     fill:#fff
@@ -258,6 +260,8 @@ export class Footer extends React.Component {
           </a>{" "}
           </li>
         </ul>
+
+        <EmailCapture />
 
         <ul className="footer-social top-margin quarter">
           <li>
