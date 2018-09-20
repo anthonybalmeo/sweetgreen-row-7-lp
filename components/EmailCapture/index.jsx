@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import envelope from '../assets/envelope.svg'
-import asterisk from '../assets/asterisk.svg'
+import envelope from './envelope.svg'
+import asterisk from './asterisk.svg'
 
 import MailchimpSubscribe from "react-mailchimp-subscribe"
-import { config } from '../config';
+import { config } from '../../config';
 
 const url = "//sweetgreen.us5.list-manage.com/subscribe/post?u=REMOVEME935cde8faa405d2d908226449&amp;id=487008c6ce";
 
