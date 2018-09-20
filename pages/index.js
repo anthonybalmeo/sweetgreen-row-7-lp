@@ -3,27 +3,17 @@ import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
 
 import { Timeline } from '../components/Timeline'
+import { Footer } from '../components/Footer'
 
 import SweetlifeMedium from '../assets/fonts/Sweetlife-Medium.woff2'
 import GothamBook from '../assets/fonts/Gotham-Book.woff2'
 import FlamaCondensed from '../assets/fonts/FlamaCondensed-Medium.woff2'
-import { Mobile } from '../components/MediaQueries'
 
-import salad from '../assets/salads.jpg'
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
-const HeaderImg = styled.img`
-  src: url(${props => props.src});
-  margin-bottom: 10rem;
-`
 export default () =>
   <React.Fragment>
-    <Title>sweetgreen</Title>
-    <HeaderImg src={salad} />
     <Timeline />
+    <Footer />
   </React.Fragment>
 
 injectGlobal`

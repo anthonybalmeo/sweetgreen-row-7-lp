@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Module/D-Footer" transform="translate(-660.000000, -195.000000)">
+            <g id="Group-4" transform="translate(587.000000, 195.000000)">
+                <g id="Group-3" transform="translate(73.000000, 0.000000)">
+                    <path d="M0.5,24 C0.5,36.9786923 11.0213077,47.5 24,47.5 C36.9786923,47.5 47.5,36.9786923 47.5,24 C47.5,11.0213077 36.9786923,0.5 24,0.5 C11.0213077,0.5 0.5,11.0213077 0.5,24 Z" id="back" stroke="#FFFFFF" opacity="0.159999996"></path>
+                    <path d="M20,20.9525 L21.8605,20.9525 L21.8605,19.1445 C21.8605,18.3465 21.8805,17.1165 22.4595,16.3545 C23.07,15.548 23.9075,15 25.3485,15 C27.696,15 28.6845,15.3345 28.6845,15.3345 L28.219,18.092 C28.219,18.092 27.444,17.867 26.7205,17.867 C25.9965,17.867 25.3485,18.1265 25.3485,18.85 L25.3485,20.9525 L28.316,20.9525 L28.109,23.6455 L25.3485,23.6455 L25.3485,33 L21.8605,33 L21.8605,23.6455 L20,23.6455 L20,20.9525" id="Fill-3" fill="#FFFFFF" opacity="0.959999979"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
