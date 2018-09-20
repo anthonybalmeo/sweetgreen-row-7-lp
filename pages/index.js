@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled, { injectGlobal } from 'styled-components'
 
-import { TimelineMobile } from '../components/TimelineMobile'
+import { Timeline } from '../components/Timeline'
 
 import SweetlifeMedium from '../assets/fonts/Sweetlife-Medium.woff2'
 import GothamBook from '../assets/fonts/Gotham-Book.woff2'
@@ -23,9 +23,7 @@ export default () =>
   <React.Fragment>
     <Title>sweetgreen</Title>
     <HeaderImg src={salad} />
-    <Mobile>
-      <TimelineMobile />
-    </Mobile>
+    <Timeline />
   </React.Fragment>
 
 injectGlobal`

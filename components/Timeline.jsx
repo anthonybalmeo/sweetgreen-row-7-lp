@@ -1,13 +1,28 @@
-const TimelineData = [
+import { Mobile } from '../components/MediaQueries'
+import { TimelineMobile } from './TimelineMobile'
+import logo from '../assets/from-seed-to-sweetgreen.png'
+import chef from '../assets/chef.jpg'
+import cutSquash from '../assets/cut-squash.jpg'
+import hands from '../assets/hands.jpg'
+import people from '../assets/people.jpg'
+import plant from '../assets/plant.jpg'
+import seeds from '../assets/seeds.jpg'
+import squash from '../assets/squash.jpg'
+import illustrationGreens from '../assets/illustration-greens.png'
+import illustrationPlants from '../assets/illustration-plant.png'
+import illustrationSeed from '../assets/illustration-seed.png'
+import illustrationSquash from '../assets/illustration-seed.png'
+
+const timelineData = [
   {
     title: 'March 16: Seeds Purchased',
     paragraph: 'When we heard about the launch of Row 7, we purchased 100,000 seeds of their one-of-a-kind koginut squash.',
     image: {
-      url: '../assets/seeds.jpg',
+      url: seeds,
       alt: 'March 16: Seeds Purchased - Seed',
     },
     illustrationImg: {
-      url: '../assets/illustation-seed.png',
+      url: illustrationSeed,
       alt: 'March 16: Seeds Purchased - Illustation Seed',
     },
   },
@@ -15,7 +30,7 @@ const TimelineData = [
     title: 'May 15th: Seeds in the ground',
     paragraph: 'Koginut squash seeds are sowed on six different farms, climates, and ecosystems across the country.',
     image: {
-      url: '../assets/hands.jpg',
+      url: hands,
       alt: 'May 15th: Seeds in the ground - Hands',
     },
     illustrationImg: null,
@@ -24,11 +39,11 @@ const TimelineData = [
     title: 'June 2nd: Sprouts begin to show',
     paragraph: 'Feedback on germination is good. Leaves have sprouted and farmers are beginning to cultivate the field.',
     image: {
-      url: '../assets/plant.jpg',
+      url: plant,
       alt: 'June 2nd: Sprouts begin to show - Plant',
     },
     illustrationImg: {
-      url: '../assets/illustration-plant.png',
+      url: illustrationPlants,
       alt: 'June 2nd: Sprouts begin to show - Illustation Plant',
     },
   },
@@ -36,7 +51,7 @@ const TimelineData = [
     title: 'June 4th: Bowl ideation',
     paragraph: 'SG culinary team flies to New York to meet with Dan Barber to begin brainstorming ingredients in collaboration bowl.',
     image: {
-      url: '../assets/people.jpg',
+      url: people,
       alt: 'June 4th: Bowl ideation - People',
     },
     illustrationImg: null,
@@ -69,11 +84,11 @@ const TimelineData = [
     title: 'August 15th: Squash picked',
     paragraph: 'First squash is picked in L.A. and taste-tested by our Chef in the Culver City Food Lab.',
     image: {
-      url: '../assets/squash.jpg',
+      url: squash,
       alt: 'August 15th: Squash picked - Squash',
     },
     illustrationImg: {
-      url: '../assets/illustation-squash.png',
+      url: illustrationSquash,
       alt: 'August 15th: Squash picked - Squash Illustation',
     },
   },
@@ -81,7 +96,7 @@ const TimelineData = [
     title: 'August 20th: Squash curing',
     paragraph: 'After being cut from the vine, squash are left in the field for 1-2 weeks to cure and heighten its sweetness.',
     image: {
-      url: '../assets/cut-squash.jpg',
+      url: cutSquash,
       alt: 'August 20th: Squash curing - Cut Squash',
     },
     illustrationImg: null,
@@ -90,14 +105,17 @@ const TimelineData = [
     title: 'September 4th: Final bowl',
     paragraph: 'Ingredients for Koginut Squash Bowl are finalized with Dan Barber and sg culinary team.',
     image: {
-      url: '../assets/cut-chef.jpg',
+      url: chef,
       alt: 'September 4th: Final bowl - Chef',
     },
     illustrationImg: {
-      url: '../assets/illustation-greens.png',
+      url: illustrationGreens,
       alt: 'September 4th: Final bowl - Greens',
     },
   },
 ]
 
-export default TimelineData
+export const Timeline = () =>
+  <Mobile>
+    <TimelineMobile timelineData={timelineData} logo={logo} />
+  </Mobile>
