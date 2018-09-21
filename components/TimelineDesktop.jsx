@@ -1,4 +1,17 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+import LazyLoad from 'react-lazyload'
+import { lazyload } from 'react-lazyload'
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-2px)
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+`
 
 const TimelineWrapper = styled.div`
   background: #FFFFFF;
@@ -71,7 +84,7 @@ const ImageBlock = styled.div`
   }
 `
 
-const CopyContainer = styled.div `
+const CopyContainer = styled.div`
   position: relative;
   width: 50%;
 `
@@ -79,7 +92,7 @@ const CopyContainer = styled.div `
 const Title = styled.h5`
   color: #1F4F46;
   font-family: 'Flama Condensed';
-  font-size: 14px;  
+  font-size: 14px;
   font-weight: normal;
   margin: 0;
   text-transform: uppercase;
@@ -120,16 +133,26 @@ const Illustration = styled.img`
   width: 142px;
 `
 const IllustrationContainer = styled.div`
+  visibility: visible;
+  animation: ${fadeIn} 1s ease;
+  transition: visibility 1s ease;
+
   &.illustration-spacing {
     height: 178px;
   }
+`
+
+const Img = styled.img`
+  visibility: visible;
+  animation: ${fadeIn} 0.5s ease;
+  transition: visibility 0.5s ease;
 `
 
 const TimelineBlock = styled.li`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
+
   &.offset-spacing {
     padding-top: 130px;
   }
@@ -159,7 +182,7 @@ const TimelineBlock = styled.li`
         &:before {
           left: calc(0% - 10px);
         }
-      }      
+      }
     }
   }
   &.right-to-left {
@@ -201,30 +224,31 @@ export const TimelineDesktop = (props) => {
     <TimelineWrapper>
       <TimelineLogo src={logo} />
       <TimelineContainer>
-      {
-        timelineData.map((data, i) => (
-          <TimelineBlock key={i} className={data.order} >
+        {
+          timelineData.map((data, i) => (
+            <TimelineBlock key={i} className={data.order} >
               {
                 <ImageContainer>
-                  { data.image &&
+                  {data.image &&
                     <ImageBlock>
                       <img src={data.image.url} alt={data.image.alt} />
                     </ImageBlock>
                   }
                 </ImageContainer>
               }
-            <CopyContainer>
-              {
-                <IllustrationContainer className={!data.illustrationImg && !data.image ? null : 'illustration-spacing' }>
-                { data.illustrationImg && <Illustration src={data.illustrationImg.url} /> }
-                </IllustrationContainer>
-              }
-              <Title>{data.title}</Title>
-              <Copy>{data.paragraph}</Copy>
-            </CopyContainer>
-          </TimelineBlock>
-        ))
-      }
-    </TimelineContainer>
-  </TimelineWrapper>
-)}
+              <CopyContainer>
+                {
+                  <IllustrationContainer className={!data.illustrationImg && !data.image ? null : 'illustration-spacing'}>
+                    {data.illustrationImg && <Illustration src={data.illustrationImg.url} />}
+                  </IllustrationContainer>
+                }
+                <Title>{data.title}</Title>
+                <Copy>{data.paragraph}</Copy>
+              </CopyContainer>
+            </TimelineBlock>
+          ))
+        }
+      </TimelineContainer>
+    </TimelineWrapper>
+  )
+}
