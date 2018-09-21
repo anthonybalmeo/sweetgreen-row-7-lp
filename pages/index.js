@@ -7,6 +7,10 @@ import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
 import { Timeline } from '../components/Timeline'
 import { Footer } from '../components/Footer'
+import { WatchAndLearnSection } from '../components/WatchAndLearnSection'
+import { Row7Section } from '../components/Row7Section'
+import { RowLessTraveledSection } from '../components/RowLessTraveledSection'
+import { BowlSection } from '../components/BowlSection'
 
 import SweetlifeMedium from '../assets/fonts/Sweetlife-Medium.woff2'
 import GothamBook from '../assets/fonts/Gotham-Book.woff2'
@@ -16,7 +20,11 @@ export default () =>
   <React.Fragment>
     <Header />
     <Hero />
+    <WatchAndLearnSection />
+    <Row7Section />
+    <RowLessTraveledSection />
     <Timeline />
+    <BowlSection />
     <Footer />
   </React.Fragment>
 

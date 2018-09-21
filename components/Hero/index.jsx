@@ -15,7 +15,6 @@ const MobileHeroWrapper = styled.div`
 const DesktopHeroWrapper = styled.div`
   background: url(${mainImage}) no-repeat center center;
   height: 800px;
-  background-size: 100%;
 `
 
 export const MobileHero = () =>

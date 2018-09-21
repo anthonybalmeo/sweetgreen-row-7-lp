@@ -201,7 +201,7 @@ export class Footer extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({ show: true }), 1500)
+    setTimeout(() => this.setState({ show: true }), 250)
   }
 
   render() {
