@@ -1,6 +1,5 @@
 import styled, { keyframes } from 'styled-components'
 import LazyLoad from 'react-lazyload'
-import { lazyload } from 'react-lazyload'
 
 const fadeIn = keyframes`
   from {
@@ -56,6 +55,9 @@ const ImageContainer = styled.div`
 const ImageBlock = styled.div`
   position: relative;
   > img {
+    visibility: visible;
+    animation: ${fadeIn} 1s ease;
+    transition: visibility 1s ease;
     padding-bottom: 130px;
     position: relative;
     width: 100%;
@@ -85,6 +87,9 @@ const ImageBlock = styled.div`
 `
 
 const CopyContainer = styled.div`
+  visibility: visible;
+  animation: ${fadeIn} 1s ease;
+  transition: visibility 1s ease;
   position: relative;
   width: 50%;
 `
@@ -128,24 +133,17 @@ const Copy = styled.p`
 
 const Illustration = styled.img`
   display: block;
+  visibility: visible;
+  animation: ${fadeIn} 1s ease;
+  transition: visibility 1s ease;
   margin-bottom: 30px;
   src: url(${props => props.src});
   width: 142px;
 `
 const IllustrationContainer = styled.div`
-  visibility: visible;
-  animation: ${fadeIn} 1s ease;
-  transition: visibility 1s ease;
-
   &.illustration-spacing {
     height: 178px;
   }
-`
-
-const Img = styled.img`
-  visibility: visible;
-  animation: ${fadeIn} 0.5s ease;
-  transition: visibility 0.5s ease;
 `
 
 const TimelineBlock = styled.li`
@@ -231,20 +229,27 @@ export const TimelineDesktop = (props) => {
                 <ImageContainer>
                   {data.image &&
                     <ImageBlock>
-                      <img src={data.image.url} alt={data.image.alt} />
+                      <LazyLoad height={600}>
+                        <img src={data.image.url} alt={data.image.alt} />
+                      </LazyLoad>
                     </ImageBlock>
                   }
                 </ImageContainer>
               }
-              <CopyContainer>
-                {
-                  <IllustrationContainer className={!data.illustrationImg && !data.image ? null : 'illustration-spacing'}>
-                    {data.illustrationImg && <Illustration src={data.illustrationImg.url} />}
-                  </IllustrationContainer>
-                }
-                <Title>{data.title}</Title>
-                <Copy>{data.paragraph}</Copy>
-              </CopyContainer>
+              <LazyLoad height={500}>
+                <CopyContainer>
+                  {
+                    <IllustrationContainer className={!data.illustrationImg && !data.image ? null : 'illustration-spacing'}>
+                      {
+                        data.illustrationImg &&
+                          <LazyLoad height={148}><Illustration src={data.illustrationImg.url} /></LazyLoad>
+                      }
+                    </IllustrationContainer>
+                  }
+                  <Title>{data.title}</Title>
+                  <Copy>{data.paragraph}</Copy>
+                </CopyContainer>
+              </LazyLoad>
             </TimelineBlock>
           ))
         }
