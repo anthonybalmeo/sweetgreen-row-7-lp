@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const TimelineWrapper = styled.section`
+const TimelineWrapper = styled.div`
   background: #FFFFFF;
   height: 100%;
   position: relative;
@@ -199,33 +199,32 @@ export const TimelineDesktop = (props) => {
 
   return (
     <TimelineWrapper>
-    <TimelineLogo src={logo} />
-    <TimelineContainer>
-    {
-      timelineData.map((data, i) => (
-        <TimelineBlock key={i} className={data.order} >
-            {
-              <ImageContainer>
-                 { data.image &&
-                  <ImageBlock>
-                    <img src={data.image.url} alt={data.image.alt} />
-                  </ImageBlock>
-                 }
-              </ImageContainer>
-            }
-          <CopyContainer>
-            {
-              <IllustrationContainer className={!data.illustrationImg && !data.image ? null : 'illustration-spacing' }>
-              { data.illustrationImg && <Illustration src={data.illustrationImg.url} /> }
-              </IllustrationContainer>
-            }
-            <Title>{data.title}</Title>
-            <Copy>{data.paragraph}</Copy>
-          </CopyContainer>
-        </TimelineBlock>
-      ))
-    }
+      <TimelineLogo src={logo} />
+      <TimelineContainer>
+      {
+        timelineData.map((data, i) => (
+          <TimelineBlock key={i} className={data.order} >
+              {
+                <ImageContainer>
+                  { data.image &&
+                    <ImageBlock>
+                      <img src={data.image.url} alt={data.image.alt} />
+                    </ImageBlock>
+                  }
+                </ImageContainer>
+              }
+            <CopyContainer>
+              {
+                <IllustrationContainer className={!data.illustrationImg && !data.image ? null : 'illustration-spacing' }>
+                { data.illustrationImg && <Illustration src={data.illustrationImg.url} /> }
+                </IllustrationContainer>
+              }
+              <Title>{data.title}</Title>
+              <Copy>{data.paragraph}</Copy>
+            </CopyContainer>
+          </TimelineBlock>
+        ))
+      }
     </TimelineContainer>
   </TimelineWrapper>
-  )
-}
+)}
