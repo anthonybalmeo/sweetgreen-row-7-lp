@@ -3,6 +3,7 @@ import styled from 'styled-components'
 const TimelineWrapper = styled.section`
   background: #FFFFFF;
   height: 100%;
+  position: relative;
   width: 100%;
 `
 
@@ -18,7 +19,7 @@ const TimelineLogo = styled.img`
 const TimelineContainer = styled.ul`
   background: white;
   height: 100%;
-  margin: 0 auto;
+  margin: 30px auto 0;
   max-width: 1100px;
   position: relative;
   width: 100%;
