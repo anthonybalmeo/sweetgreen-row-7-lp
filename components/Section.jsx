@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { config } from '../config'
 
-// width: 1155px
+export const desktopWrapperWidth = '1155px'
 
 const SectionDesktopWrapper = styled.section`
   width: 100%;
@@ -14,7 +14,7 @@ const SectionDesktopWrapper = styled.section`
 `
 
 const SectionDesktopInner = styled.div`
-  width: 1155px;
+  width: ${desktopWrapperWidth};
 `
 
 export const SectionDesktop = ({ white, children }) =>
