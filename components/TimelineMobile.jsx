@@ -1,6 +1,18 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+import LazyLoad from 'react-lazyload'
 
-const TimelineWrapper = styled.section`
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-2px)
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+`
+
+const TimelineWrapper = styled.div`
   background: #FFFFFF;
   height: 100%;
   width: 100%;
@@ -29,12 +41,18 @@ const ImageContainer = styled.div`
   width: 327px;
 
   > img {
+    visibility: visible;
+    animation: ${fadeIn} 1s ease;
+    transition: visibility 1s ease;
     display: block;
     width: 327px;
   }
 `
 
 const CopyContainer = styled.div `
+  visibility: visible;
+  animation: ${fadeIn} 1s ease;
+  transition: visibility 1s ease;
   border-left: 2px solid #E5E5E5;
   margin: 0 40px;
   padding: 70px 0 100px 60px;
@@ -83,6 +101,9 @@ const TimelineBlock = styled.div`
 `
 
 const Illustration = styled.img`
+    visibility: visible;
+    animation: ${fadeIn} 1s ease;
+    transition: visibility 1s ease;
     display: block;
     height: 106px;
     margin-bottom: 30px;
@@ -105,17 +126,19 @@ export const TimelineMobile = (props) => {
         <TimelineBlock key={i}>
             {
               data.image &&
-              <ImageContainer>
-                <img src={data.image.url} alt={data.image.alt} />
-              </ImageContainer>
+                <ImageContainer>
+                  <LazyLoad height={327}><img src={data.image.url} alt={data.image.alt} /></LazyLoad>
+                </ImageContainer>
             }
-          <CopyContainer>
-            {
-              data.illustrationImg && <Illustration src={data.illustrationImg.url} />
-            }
-            <Title>{data.title}</Title>
-            <Copy>{data.paragraph}</Copy>
-          </CopyContainer>
+          <LazyLoad height={465}>
+            <CopyContainer>
+              {
+                data.illustrationImg && <LazyLoad height={106}><Illustration src={data.illustrationImg.url} /></LazyLoad>
+              }
+              <Title>{data.title}</Title>
+              <Copy>{data.paragraph}</Copy>
+            </CopyContainer>
+          </LazyLoad>
         </TimelineBlock>
       ))
     }
