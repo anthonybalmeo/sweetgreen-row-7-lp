@@ -1,5 +1,7 @@
-import { Mobile } from '../components/MediaQueries'
+import { Mobile, TabletAndDesktop } from '../components/MediaQueries'
+import { TimelineDesktop } from './TimelineDesktop';
 import { TimelineMobile } from './TimelineMobile'
+
 import logo from '../assets/from-seed-to-sweetgreen.png'
 import chef from '../assets/chef.jpg'
 import cutSquash from '../assets/cut-squash.jpg'
@@ -15,6 +17,7 @@ import illustrationSquash from '../assets/illustration-seed.png'
 
 const timelineData = [
   {
+    order: 'left-to-right',
     title: 'March 16: Seeds Purchased',
     paragraph: 'When we heard about the launch of Row 7, we purchased 100,000 seeds of their one-of-a-kind koginut squash.',
     image: {
@@ -27,6 +30,7 @@ const timelineData = [
     },
   },
   {
+    order: 'right-to-left',
     title: 'May 15th: Seeds in the ground',
     paragraph: 'Koginut squash seeds are sowed on six different farms, climates, and ecosystems across the country.',
     image: {
@@ -36,6 +40,7 @@ const timelineData = [
     illustrationImg: null,
   },
   {
+    order: 'left-to-right',
     title: 'June 2nd: Sprouts begin to show',
     paragraph: 'Feedback on germination is good. Leaves have sprouted and farmers are beginning to cultivate the field.',
     image: {
@@ -48,6 +53,7 @@ const timelineData = [
     },
   },
   {
+    order: 'right-to-left',
     title: 'June 4th: Bowl ideation',
     paragraph: 'SG culinary team flies to New York to meet with Dan Barber to begin brainstorming ingredients in collaboration bowl.',
     image: {
@@ -57,30 +63,35 @@ const timelineData = [
     illustrationImg: null,
   },
   {
+    order: 'left-to-right',
     title: 'July 1st: Pennsylvania',
     paragraph: 'Crop growing well at Cedar Meadow Farm in Pennsylvania. A little thin in some spots due to very wet conditions early on. Projected harvest date around September 20th.',
     image: null,
     illustrationImg: null,
   },
   {
+    order: 'right-to-left',
     title: 'July 6th: New York',
     paragraph: 'No flowers just yet at Pedersen Farm in New York, but growing well. Projected harvest date around mid-October to allow a little more time to “cure” and become sweeter in storage.',
     image: null,
     illustrationImg: null,
   },
   {
+    order: 'left-to-right',
     title: 'July 17th: Los Angeles',
     paragraph: 'Weiser Family Farm should be picking first planting around mid-August.',
     image: null,
     illustrationImg: null,
   },
   {
+    order: 'right-to-left',
     title: 'July 25th: Chicago',
     paragraph: 'Nichols Farm had a little bit of a wash out, but only a small percent of crop was affected. With the rain and heat - they still look great. The expected harvest date is September 1st.',
     image: null,
     illustrationImg: null,
   },
   {
+    order: 'right-to-left offset-spacing',
     title: 'August 15th: Squash picked',
     paragraph: 'First squash is picked in L.A. and taste-tested by our Chef in the Culver City Food Lab.',
     image: {
@@ -93,6 +104,7 @@ const timelineData = [
     },
   },
   {
+    order: 'left-to-right',
     title: 'August 20th: Squash curing',
     paragraph: 'After being cut from the vine, squash are left in the field for 1-2 weeks to cure and heighten its sweetness.',
     image: {
@@ -102,6 +114,7 @@ const timelineData = [
     illustrationImg: null,
   },
   {
+    order: 'right-to-left',
     title: 'September 4th: Final bowl',
     paragraph: 'Ingredients for Koginut Squash Bowl are finalized with Dan Barber and sg culinary team.',
     image: {
@@ -116,6 +129,11 @@ const timelineData = [
 ]
 
 export const Timeline = () =>
-  <Mobile>
-    <TimelineMobile timelineData={timelineData} logo={logo} />
-  </Mobile>
+  <>
+    <Mobile>
+      <TimelineMobile timelineData={timelineData} logo={logo} />
+    </Mobile>
+    <TabletAndDesktop>
+      <TimelineDesktop timelineData={timelineData} logo={logo} />
+    </TabletAndDesktop>
+  </>

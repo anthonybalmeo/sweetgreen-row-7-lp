@@ -44,7 +44,7 @@ const CopyContainer = styled.div `
 const Title = styled.h5`
   color: #1F4F46;
   font-family: 'Flama Condensed';
-  font-size: 14px;  
+  font-size: 14px;
   font-weight: normal;
   margin: 0;
   text-transform: uppercase;
@@ -104,7 +104,7 @@ export const TimelineMobile = (props) => {
       timelineData.map((data, i) => (
         <TimelineBlock key={i}>
             {
-              data.image && 
+              data.image &&
               <ImageContainer>
                 <img src={data.image.url} alt={data.image.alt} />
               </ImageContainer>
