@@ -1,4 +1,4 @@
-import { Mobile, TabletAndDesktop } from '../components/MediaQueries'
+import { MobileAndTablet, Desktop } from '../components/MediaQueries'
 import { TimelineDesktop } from './TimelineDesktop';
 import { TimelineMobile } from './TimelineMobile'
 
@@ -130,10 +130,10 @@ const timelineData = [
 
 export const Timeline = () =>
   <>
-    <Mobile>
+    <MobileAndTablet>
       <TimelineMobile timelineData={timelineData} logo={logo} />
-    </Mobile>
-    <TabletAndDesktop>
+    </MobileAndTablet>
+    <Desktop>
       <TimelineDesktop timelineData={timelineData} logo={logo} />
-    </TabletAndDesktop>
+    </Desktop>
   </>
