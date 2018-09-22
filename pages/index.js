@@ -6,6 +6,7 @@ import { config } from '../config'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
 import { Timeline } from '../components/Timeline'
+import { CommunitySection } from '../components/CommunitySection'
 import { Footer } from '../components/Footer'
 import { WatchAndLearnSection } from '../components/WatchAndLearnSection'
 import { Row7Section } from '../components/Row7Section'
@@ -25,6 +26,7 @@ export default () =>
     <RowLessTraveledSection />
     <Timeline />
     <BowlSection />
+    <CommunitySection />
     <Footer />
   </React.Fragment>
 
