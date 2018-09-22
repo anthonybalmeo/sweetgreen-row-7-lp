@@ -30,7 +30,7 @@ const TimelineLogo = styled.img`
 const TimelineContainer = styled.div`
   background: white;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   max-width: 375px;
   position: relative;
   width: 100%;
