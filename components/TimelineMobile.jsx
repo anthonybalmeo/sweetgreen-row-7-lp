@@ -42,8 +42,8 @@ const ImageContainer = styled.div`
 
   > img {
     visibility: visible;
-    animation: ${fadeIn} 1s ease;
-    transition: visibility 1s ease;
+    animation: ${fadeIn} 2s ease;
+    transition: visibility 2s ease;
     display: block;
     width: 327px;
   }
@@ -51,8 +51,8 @@ const ImageContainer = styled.div`
 
 const CopyContainer = styled.div `
   visibility: visible;
-  animation: ${fadeIn} 1s ease;
-  transition: visibility 1s ease;
+  animation: ${fadeIn} 2s ease;
+  transition: visibility 2s ease;
   border-left: 2px solid #E5E5E5;
   margin: 0 40px;
   padding: 70px 0 100px 60px;
@@ -70,7 +70,7 @@ const Title = styled.h5`
   &:before {
     content: '';
     background-color: white;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #3B4245;
     border-radius: 50%;
     height: 16px;
     left: calc(0% - 10px);
@@ -102,8 +102,8 @@ const TimelineBlock = styled.div`
 
 const Illustration = styled.img`
     visibility: visible;
-    animation: ${fadeIn} 1s ease;
-    transition: visibility 1s ease;
+    animation: ${fadeIn} 2s ease;
+    transition: visibility 2s ease;
     display: block;
     height: 106px;
     margin-bottom: 30px;

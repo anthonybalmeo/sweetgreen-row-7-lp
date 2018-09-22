@@ -56,8 +56,8 @@ const ImageBlock = styled.div`
   position: relative;
   > img {
     visibility: visible;
-    animation: ${fadeIn} 1s ease;
-    transition: visibility 1s ease;
+    animation: ${fadeIn} 2s ease;
+    transition: visibility 2s ease;
     padding-bottom: 130px;
     position: relative;
     width: 100%;
@@ -88,8 +88,8 @@ const ImageBlock = styled.div`
 
 const CopyContainer = styled.div`
   visibility: visible;
-  animation: ${fadeIn} 1s ease;
-  transition: visibility 1s ease;
+  animation: ${fadeIn} 2s ease;
+  transition: visibility 2s ease;
   position: relative;
   width: 50%;
 `
@@ -134,8 +134,8 @@ const Copy = styled.p`
 const Illustration = styled.img`
   display: block;
   visibility: visible;
-  animation: ${fadeIn} 1s ease;
-  transition: visibility 1s ease;
+  animation: ${fadeIn} 2s ease;
+  transition: visibility 2s ease;
   margin-bottom: 30px;
   src: url(${props => props.src});
   width: 142px;
