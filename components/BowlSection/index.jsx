@@ -2,13 +2,15 @@ import React from 'react'
 import { BowlDesktop } from './BowlDesktop'
 import { BowlMobile } from './BowlMobile'
 
+import { config } from '../../config'
+
 import { MobileAndTablet, Desktop } from '../MediaQueries'
 
 import { SectionDesktop } from '../Section'
 import { SectionHeader } from '../SectionHeader'
 
 export const BowlSection = () =>
-  <SectionDesktop white={false}>
+  <SectionDesktop bg={config.colors.pageGray}>
     <SectionHeader>
       The Bowl
     </SectionHeader>
