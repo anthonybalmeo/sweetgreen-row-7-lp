@@ -8,7 +8,6 @@ import { SectionHero } from '../components/SectionHero'
 import { Timeline } from '../components/Timeline'
 import { CommunitySection } from '../components/CommunitySection'
 import { Footer } from '../components/Footer'
-import { WatchAndLearnSection } from '../components/WatchAndLearnSection'
 import { Row7Section } from '../components/Row7Section'
 import { RowLessTraveledSection } from '../components/RowLessTraveledSection'
 import { BowlSection } from '../components/BowlSection'
@@ -21,7 +20,6 @@ export default () =>
   <React.Fragment>
     <Header />
     <SectionHero />
-    {/* <WatchAndLearnSection /> */}
     <Row7Section />
     <RowLessTraveledSection />
     <Timeline />
