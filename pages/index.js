@@ -4,7 +4,7 @@ import styled, { injectGlobal } from 'styled-components'
 import { config } from '../config'
 
 import { Header } from '../components/Header'
-import { Hero } from '../components/Hero'
+import { SectionHero } from '../components/SectionHero'
 import { Timeline } from '../components/Timeline'
 import { CommunitySection } from '../components/CommunitySection'
 import { Footer } from '../components/Footer'
@@ -20,8 +20,8 @@ import FlamaCondensed from '../assets/fonts/FlamaCondensed-Medium.woff2'
 export default () =>
   <React.Fragment>
     <Header />
-    <Hero />
-    <WatchAndLearnSection />
+    <SectionHero />
+    {/* <WatchAndLearnSection /> */}
     <Row7Section />
     <RowLessTraveledSection />
     <Timeline />

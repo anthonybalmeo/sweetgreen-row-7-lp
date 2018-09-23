@@ -5,7 +5,7 @@ import { SectionDesktop } from './Section'
 import { SectionHeader } from './SectionHeader'
 
 export const Row7Section = () =>
-  <SectionDesktop white={true}>
+  <SectionDesktop bg={'white'}>
     <SectionHeader>
       Row 7 Seed Co
     </SectionHeader>

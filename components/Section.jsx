@@ -1,30 +1,46 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { config } from '../config'
 
 export const desktopWrapperWidth = '1155px'
+export const mobileWrapperWidth = '320px'
 
 const SectionDesktopWrapper = styled.section`
   width: 100%;
   padding: 80px 0;
   display: flex;
   justify-content: center;
+  ${ props => props.bg && css`
+    background: ${props.bg};
+  `}
+`
 
-  background: ${props => props.white ? 'white' : config.colors.pageGray};
+const SectionMobileWrapper = styled(SectionDesktopWrapper)`
+  padding: 80px 0;
 `
 
 const SectionDesktopInner = styled.div`
-  width: ${desktopWrapperWidth};
+  max-width: ${desktopWrapperWidth};
+  width: 90%;
+  padding: 25px;
 `
 
-export const SectionDesktop = ({ white, children }) =>
-  <SectionDesktopWrapper white={white}>
+const SectionMobileInner = styled.div`
+  padding: 25px;
+  width: 85%;
+  min-width: ${mobileWrapperWidth};
+`
+
+export const SectionDesktop = ({ bg, children, className }) =>
+  <SectionDesktopWrapper bg={bg} className={className}>
     <SectionDesktopInner>
       {children}
     </SectionDesktopInner>
   </SectionDesktopWrapper>
 
-
-// // width: 85%
-// // min-width: 320px;
-// export const Mobile = () =>
+export const SectionMobile = ({ bg, children, className }) =>
+  <SectionMobileWrapper bg={bg} className={className}>
+    <SectionMobileInner>
+      {children}
+    </SectionMobileInner>
+  </SectionMobileWrapper>

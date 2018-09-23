@@ -20,3 +20,11 @@ export const GreenButton = styled(Button)`
   color: white;
   background: ${config.colors.green};
 `
+
+export const WhiteOutlineButton = styled(Button)`
+  color: white;
+  background: ${config.colors.green};
+  border: 1px solid white;
+  line-height: 33px;
+  background: none;
+`
