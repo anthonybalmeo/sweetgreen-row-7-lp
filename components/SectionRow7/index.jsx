@@ -6,6 +6,7 @@ import { SectionHeader } from '../SectionHeader'
 import row7 from './row7.svg'
 import squash from './squash.jpg'
 import men from './men.jpg'
+import { config } from '../../config';
 
 const Chunk = styled.div`
   width: 48%;
@@ -26,7 +27,7 @@ const Text = styled.p`
 `
 
 export const SectionRow7 = () =>
-  <SectionDesktop bg={'white'}>
+  <SectionDesktop bg={config.colors.white}>
     <SectionHeader>
       Row 7 Seed Co
     </SectionHeader>
