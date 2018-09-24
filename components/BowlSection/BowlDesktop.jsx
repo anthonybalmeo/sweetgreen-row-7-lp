@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import theBowl from './bowl.jpg'
-import arrives from './nov11.png'
+import arrives from './nov1.png'
 import { config } from '../../config'
 
 const BowlContainer = styled.div`

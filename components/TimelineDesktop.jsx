@@ -40,7 +40,7 @@ const TimelineContainer = styled.ul`
     background: #E5E5E5;
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 20px;
     content: ' ';
     display: block;
     width: 2px;
@@ -151,8 +151,12 @@ const TimelineBlock = styled.li`
   flex-direction: row;
   flex-wrap: wrap;
 
-  &.offset-spacing {
+  &.offset-spacing-top {
     padding-top: 130px;
+  }
+
+  &.offset-spacing-bottom {
+    padding-bottom: 130px;
   }
 
   &.left-to-right {

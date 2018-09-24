@@ -17,9 +17,16 @@ import illustrationSquash from '../assets/illustration-seed.png'
 
 const timelineData = [
   {
+    order: 'right-to-left offset-spacing-bottom',
+    title: 'February 27th: Row Seed Company launches',
+    paragraph: 'Among their offerings is Robin‘s Koginut squash, the result of a years of field and kitchen co-selection by vegetable breeder Michael Mazourek and chef Dan Barber.',
+    image: null,
+    illustrationImg: null,
+  },
+  {
     order: 'left-to-right',
     title: 'March 16: Seeds Purchased',
-    paragraph: 'When we heard about the launch of Row 7, we purchased 100,000 seeds of their one-of-a-kind koginut squash.',
+    paragraph: 'When we heard about the launch of Row 7, we purchased 100,000 seeds of their one-of-a-kind Robin’s Koginut Squash.',
     image: {
       url: seeds,
       alt: 'March 16: Seeds Purchased - Seed',
@@ -32,7 +39,7 @@ const timelineData = [
   {
     order: 'right-to-left',
     title: 'May 15th: Seeds in the ground',
-    paragraph: 'Koginut squash seeds are sowed on six different farms, climates, and ecosystems across the country.',
+    paragraph: 'Koginut squash seeds are sowed on six different farms—in six different climates and ecosystems across the country.',
     image: {
       url: hands,
       alt: 'May 15th: Seeds in the ground - Hands',
@@ -55,7 +62,7 @@ const timelineData = [
   {
     order: 'right-to-left',
     title: 'June 4th: Bowl ideation',
-    paragraph: 'SG culinary team flies to New York to meet with Dan Barber to begin brainstorming ingredients in collaboration bowl.',
+    paragraph: 'SG culinary team flies to New York to meet with Dan Barber and Row 7 to begin brainstorming ingredients in collaboration bowl.',
     image: {
       url: people,
       alt: 'June 4th: Bowl ideation - People',
@@ -86,12 +93,12 @@ const timelineData = [
   {
     order: 'right-to-left',
     title: 'July 25th: Chicago',
-    paragraph: 'Nichols Farm had a little bit of a wash out, but only a small percent of crop was affected. With the rain and heat - they still look great. The expected harvest date is September 1st.',
+    paragraph: 'Nichols Farm had a little bit of a wash out, but only a small percent of crop was affected. With the rain and heat, they still look great. Experience harvest date is September 1st.',
     image: null,
     illustrationImg: null,
   },
   {
-    order: 'right-to-left offset-spacing',
+    order: 'right-to-left offset-spacing-top',
     title: 'August 15th: Squash picked',
     paragraph: 'First squash is picked in L.A. and taste-tested by our Chef in the Culver City Food Lab.',
     image: {
@@ -106,7 +113,7 @@ const timelineData = [
   {
     order: 'left-to-right',
     title: 'August 20th: Squash curing',
-    paragraph: 'After being cut from the vine, squash are left in the field for 1-2 weeks to cure and heighten its sweetness.',
+    paragraph: 'After being cut from the vine, squash are left in the field for 1-2 weeks to cure and concentrate their sweetness.',
     image: {
       url: cutSquash,
       alt: 'August 20th: Squash curing - Cut Squash',
@@ -116,7 +123,7 @@ const timelineData = [
   {
     order: 'right-to-left',
     title: 'September 4th: Final bowl',
-    paragraph: 'Ingredients for Koginut Squash Bowl are finalized with Dan Barber and sg culinary team.',
+    paragraph: 'Ingredients for Koginut Squash Bowl are finalized with Dan Barber, Row 7 and sg culinary team.',
     image: {
       url: chef,
       alt: 'September 4th: Final bowl - Chef',
