@@ -9,7 +9,7 @@ import { Timeline } from '../components/Timeline'
 import { CommunitySection } from '../components/CommunitySection'
 import { Footer } from '../components/Footer'
 import { SectionRow7 } from '../components/SectionRow7'
-import { RowLessTraveledSection } from '../components/RowLessTraveledSection'
+import { SectionRowLessTraveled } from '../components/SectionRowLessTraveled'
 import { BowlSection } from '../components/BowlSection'
 
 import SweetlifeMedium from '../assets/fonts/Sweetlife-Medium.woff2'
@@ -21,7 +21,7 @@ export default () =>
     <Header />
     <SectionHero />
     <SectionRow7 />
-    <RowLessTraveledSection />
+    <SectionRowLessTraveled />
     <Timeline />
     <BowlSection />
     <CommunitySection />

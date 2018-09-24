@@ -1,7 +1,7 @@
 import React from 'react'
 import { RowLessTraveledDesktop } from './RowLessTraveledDesktop'
 import { RowLessTraveledMobile } from './RowLessTraveledMobile'
-import {Desktop, MobileAndTablet } from '../../components/MediaQueries'
+import { Desktop, MobileAndTablet } from '../../components/MediaQueries'
 
 import { SectionDesktop } from '../Section'
 import { SectionHeader } from '../SectionHeader'
@@ -34,13 +34,13 @@ const rowLessTraveledData = [
   },
 ]
 
-export const RowLessTraveledSection = () =>
+export const SectionRowLessTraveled = () =>
   <SectionDesktop bg={config.colors.pageGray}>
     <SectionHeader>
       The Row Less Traveled
     </SectionHeader>
     <MobileAndTablet>
-    <RowLessTraveledMobile rowLessTraveledData={rowLessTraveledData} />
+      <RowLessTraveledMobile rowLessTraveledData={rowLessTraveledData} />
     </MobileAndTablet>
     <Desktop>
       <RowLessTraveledDesktop rowLessTraveledData={rowLessTraveledData} />
