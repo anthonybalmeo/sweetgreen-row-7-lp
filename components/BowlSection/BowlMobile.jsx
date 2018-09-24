@@ -46,7 +46,7 @@ export const BowlMobile = () =>
   <BowlContainer>
     <BowlColumns>
       <BowlImg src={theBowl} alt='Arrives Nov. 1st' />
-    </BowlColumns>    
+    </BowlColumns>
     <BowlColumns>
       <h1>Koginut Squash Bowl by Dan&nbsp;Barber sweetgreen x row 7</h1>
       <p>

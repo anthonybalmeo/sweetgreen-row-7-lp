@@ -6,29 +6,32 @@ import sgRow7Logo from './sg-row-7-logo.svg'
 import future from './future.svg'
 import play from '../../assets/play.svg'
 
-import { desktopWrapperWidth, SectionMobile, SectionDesktop } from '../Section'
+import { SectionMobileInner, SectionDesktopInner } from '../Section'
 
 import { Mobile, TabletAndDesktop } from '../MediaQueries'
 import { WhiteOutlineButton } from '../Button';
+import { YouTubeModal } from '../YoutubeModal';
 
-const SectionDesktopHero = styled(SectionDesktop)`
-  background: url(${mainImage});
-  background-size: cover;
+const SectionDesktopHero = styled.div`
   height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: url(${mainImage}) no-repeat center center;
+  background-size: cover;
+
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
 `
 
-const SectionMobileHero = styled(SectionMobile)`
+const SectionMobileHero = styled.div`
   background: url(${mainImage});
   height: 595px;
   background-size: 1070px;
   background-position: 820px;
-`
-
-const DesktopInner = styled.div`
-  width: ${desktopWrapperWidth};
+  padding: 80px 0;
 `
 
 const Description = styled.p`
@@ -60,9 +63,16 @@ const SGRow7 = styled.img`
   width: 100%;
 `
 
+const Play = styled.img`
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  cursor:pointer;
+`
+
 export const MobileHero = () =>
-  <Mobile>
-    <SectionMobileHero bg='none'>
+  <SectionMobileHero>
+    <SectionMobileInner>
       <SGRow7 src={sgRow7Logo} alt="" />
       <FutureMobile src={future} alt="" />
       <DescriptionMobile>
@@ -71,12 +81,12 @@ export const MobileHero = () =>
         differently.
       </DescriptionMobile>
       <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>
-    </SectionMobileHero>
-  </Mobile>
+    </SectionMobileInner>
+  </SectionMobileHero>
 
 export const DesktopHero = () =>
-  <TabletAndDesktop>
-    <SectionDesktopHero bg='none'>
+  <SectionDesktopHero>
+    <SectionDesktopInner>
       <Left>
         <img src={sgRow7Logo} alt="" />
         <Future src={future} alt="" />
@@ -88,12 +98,21 @@ export const DesktopHero = () =>
         </Description>
       </Left>
 
-      <img src={play} onClick={() => { window.alert('play video') }} />
-    </SectionDesktopHero>
-  </TabletAndDesktop>
+      <YouTubeModal>
+        <Play src={play} id='NVOPXPOLYc' />
+      </YouTubeModal>
+
+    </SectionDesktopInner>
+  </SectionDesktopHero>
 
 export const SectionHero = () =>
   <React.Fragment>
-    <MobileHero />
-    <DesktopHero />
+    <Mobile>
+      <MobileHero />
+    </Mobile>
+
+    <TabletAndDesktop>
+      <DesktopHero />
+    </TabletAndDesktop>
+
   </React.Fragment>

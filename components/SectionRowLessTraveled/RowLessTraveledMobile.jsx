@@ -4,8 +4,7 @@ import america from './america.png'
 import { config } from '../../config'
 
 const RowLessTraveledContainer = styled.div`
-  padding-bottom: 60px;
-  max-width: 375px;
+  padding-bottom: 56px;
   margin: 0 auto;
 
   & > img {
@@ -48,34 +47,27 @@ const RowLessTraveledIndex = styled.div`
 `
 
 
-export const RowLessTraveledMobile = (props) => {
-  const {
-    rowLessTraveledData,
-  } = props
-
-  return (
-    <RowLessTraveledContainer>
-        <p>
-            From the moment we learned about what Dan Barber and his Row 7 partners,
-          plant breeder Michael Mazourek, and seedsman Matthew Goldfarb, were up to
-          in the kitchen + field, we knew we wanted in. We ordered 100,000 Robin’s
-          Koginut Squash seeds before the company even launched, and planted them at
-          six of our finest farms across the country. The result: a sweet, storable
-          squash with a built-in ripeness indicator harvested and cured for peak ripeness,
-          headlining sweetgreen menus across the country. Meet our family of koginut farmers below.
+export const RowLessTraveledMobile = ({ rowLessTraveledData }) =>
+  <RowLessTraveledContainer>
+    <p>
+      From the moment we learned about what Dan Barber and his Row 7 partners,
+    plant breeder Michael Mazourek, and seedsman Matthew Goldfarb, were up to
+    in the kitchen + field, we knew we wanted in. We ordered 100,000 Robin’s
+    Koginut Squash seeds before the company even launched, and planted them at
+    six of our finest farms across the country. The result: a sweet, storable
+    squash with a built-in ripeness indicator harvested and cured for peak ripeness,
+    headlining sweetgreen menus across the country. Meet our family of koginut farmers below.
         </p>
-        <img src={america} alt='America' />
-      <RowLessTraveledList>
+    <img src={america} alt='America' />
+    <RowLessTraveledList>
       {
         rowLessTraveledData.map((data, i) => (
           <RowLessTraveledListItem key={i}>
-            <RowLessTraveledIndex>{i+1}</RowLessTraveledIndex>
+            <RowLessTraveledIndex>{i + 1}</RowLessTraveledIndex>
             <RowLessTraveledTitle>{data.title}</RowLessTraveledTitle>
             <RowLessTraveledParagraph>{data.paragraph}</RowLessTraveledParagraph>
           </RowLessTraveledListItem>
         ))
       }
-      </RowLessTraveledList>
-    </RowLessTraveledContainer>
-  )
-}
+    </RowLessTraveledList>
+  </RowLessTraveledContainer>

@@ -22,6 +22,7 @@ const BowlColumns = styled.div`
   & > h1 {
     color: ${config.colors.green};
     font-size: 32px;
+    max-width: 400px;
   }
 
   & > p {
