@@ -136,7 +136,7 @@ const timelineData = [
 ]
 
 export const Timeline = () =>
-  <div id="seedToSweetgreen">
+  <div>
     <MobileAndTablet>
       <TimelineMobile timelineData={timelineData} logo={logo} />
     </MobileAndTablet>

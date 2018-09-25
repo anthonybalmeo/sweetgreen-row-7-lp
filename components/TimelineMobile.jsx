@@ -119,7 +119,7 @@ export const TimelineMobile = (props) => {
 
   return (
     <TimelineWrapper>
-    <TimelineLogo src={logo} />
+    <TimelineLogo src={logo} id='seedToSweetgreen' />
     <TimelineContainer>
     {
       timelineData.map((data, i) => (

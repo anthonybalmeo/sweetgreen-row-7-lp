@@ -40,7 +40,7 @@ const HeaderStyles = styled.header`
   justify-content: space-between;
   display: flex;
   padding: 20px;
-  z-index: 10;
+  z-index: 9999;
 `
 
 export const Header = () =>

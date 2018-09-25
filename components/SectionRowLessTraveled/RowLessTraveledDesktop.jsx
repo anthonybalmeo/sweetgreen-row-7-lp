@@ -80,7 +80,7 @@ export const RowLessTraveledDesktop = (props) => {
           </p>
         </RowLessTraveledDoubleColumn>
       <RowLessTraveledDoubleColumn>
-          <img src={america} alt='America' />
+          <img src={america} alt='America'/>
         </RowLessTraveledDoubleColumn>
       </RowLessTraveledContainer>
       <RowLessTraveledListContainer>
