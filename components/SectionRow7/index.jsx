@@ -48,7 +48,7 @@ const Greeting = styled.div`
 `
 
 export const SectionRow7 = () =>
-  <SectionDesktop bg={'white'}>
+  <SectionDesktop bg={'white'} id="row7Section">
     <SectionHeader>
       Row 7 Seed Co
     </SectionHeader>

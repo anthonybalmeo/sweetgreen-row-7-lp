@@ -32,15 +32,15 @@ export const SectionMobileInner = styled.div`
   min-width: ${mobileWrapperWidth};
 `
 
-export const SectionDesktop = ({ bg, children, className }) =>
-  <SectionDesktopWrapper bg={bg} className={className}>
+export const SectionDesktop = ({ bg, children, className, id }) =>
+  <SectionDesktopWrapper bg={bg} className={className} id={id}>
     <SectionDesktopInner>
       {children}
     </SectionDesktopInner>
   </SectionDesktopWrapper>
 
-export const SectionMobile = ({ bg, children, className }) =>
-  <SectionMobileWrapper bg={bg} className={className}>
+export const SectionMobile = ({ bg, children, className, id }) =>
+  <SectionMobileWrapper bg={bg} className={className} id={id}>
     <SectionMobileInner>
       {children}
     </SectionMobileInner>

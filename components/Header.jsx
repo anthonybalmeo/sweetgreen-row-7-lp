@@ -51,17 +51,17 @@ export const Header = () =>
 
       <LinkWrapper>
         <Desktop>
-          <A href="#">Row 7 Seed Co</A>
-          <A href="#">Farm Partnership</A>
-          <A href="#">Seed to Sweetgreen</A>
-          <A href="#">The Bowl</A>
+          <A href="#row7Section">Row 7 Seed Co</A>
+          <A href="#farmPartnerShip">Farm Partnership</A>
+          <A href="#seedToSweetgreen">Seed to Sweetgreen</A>
+          <A href="#bowlSection">The Bowl</A>
         </Desktop>
-        <GreenButton>Order Now</GreenButton>
+        <GreenButton onClick={() => window.location='https://order.sweetgreen.com/'}>Order Now</GreenButton>
       </LinkWrapper>
 
     </TabletAndDesktop>
 
     <Mobile>
-      <GreenButton>Order Now</GreenButton>
+      <GreenButton onClick={() => window.location='https://order.sweetgreen.com/'}>Order Now</GreenButton>
     </Mobile>
   </HeaderStyles>
