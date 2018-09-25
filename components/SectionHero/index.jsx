@@ -83,7 +83,9 @@ export const MobileHero = () =>
         and his visionary seed company Row 7, we challenged ourselves to think about flavor
         differently.
       </DescriptionMobile>
-      <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>
+      <YouTubeModal>
+        <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>
+      </YouTubeModal>
     </SectionMobileInner>
   </SectionMobileHero>
 
