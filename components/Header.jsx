@@ -8,9 +8,10 @@ const Logo = styled.img`
 `
 
 const LinkWrapper = styled.div`
-  width: 700px;
+  width: 800px;
   justify-content: space-around;
   display: flex;
+  align-items: center;
 
   @media only screen and (max-width: 1100px) {
     justify-content: flex-end;
@@ -22,6 +23,7 @@ const A = styled.a`
   color: #1F4F46;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-weight: bold;
 
   &, &:active, &:hover {
     text-decoration: none;
@@ -51,7 +53,7 @@ export const Header = () =>
         <Desktop>
           <A href="#">Row 7 Seed Co</A>
           <A href="#">Farm Partnership</A>
-          <A href="#">Seed to <br />Sweetgreen</A>
+          <A href="#">Seed to Sweetgreen</A>
           <A href="#">The Bowl</A>
         </Desktop>
         <GreenButton>Order Now</GreenButton>

@@ -15,6 +15,7 @@ const BowlColumns = styled.div`
   width: 100%;
 
   & > h1 {
+    font-family: 'Sweetlife Medium';
     color: ${config.colors.green};
     font-size: 30px;
     margin: 60px auto 15px;
@@ -31,9 +32,13 @@ const BowlColumns = styled.div`
 
 const ArrivingImg = styled.img`
   display: block;
-  margin: 15px auto 60px;
+  margin: 15px auto 0;
   src: url(${props => props.src});
   width: 212px;
+
+  &.spacing-bottom {
+    margin-bottom: 60px;
+  }
 `
 const BowlImg = styled.img`
   display: block;
@@ -55,7 +60,7 @@ export const BowlMobile = () =>
         raw walnuts, toasted almonds, toasted buckwheat, organic wild rice, organic
         spinach, lemon squeeze, balsamic vinaigrette  (730 cal)
       </p>
-      <ArrivingImg src={arrives} alt='Arrives Nov. 1st' />
+      <ArrivingImg src={arrives} alt='Arrives Nov. 1st' className='spacing-bottom' />
     </BowlColumns>
     <BowlColumns>
       <BowlImg src={roastedSquashFries} alt='Roasted Squash Fries' />

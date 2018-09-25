@@ -57,7 +57,7 @@ const InputWrapper = styled.div`
   position: relative;
   margin: 60px auto;
   width: 90%;
-  max-width: 400px;
+  max-width: 470px;
 
   @media (min-width: 1100px) {
     margin-top: 64px;
@@ -122,8 +122,8 @@ export const EmailCapture = ({ inputStyle = {}, freshClass }) =>
               (
                 <InputWrapper style={{ ...inputStyle, ...{ opacity: status === "sending" ? 0.2 : 1 } }}>
                   <Envelope src={envelope} alt="" />
-                  <Input type="email" name='email' placeholder="Let's keep in touch" onChange={e => email = e.target.value} />
-                  <Button type="submit">Submit</Button>
+                  <Input type="email" name='email' placeholder="Never miss a beet. Sign up for exclusives" onChange={e => email = e.target.value} />
+                  <Button type="submit">sign up</Button>
                 </InputWrapper>
               )
           }
