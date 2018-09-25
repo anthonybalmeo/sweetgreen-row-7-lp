@@ -23,7 +23,7 @@ export default () =>
     <SectionRow7 />
     <SectionRowLessTraveled />
     <Timeline />
-    <BowlSection />
+    { /*<BowlSection />*/ }
     <CommunitySection />
     <Footer />
   </React.Fragment>

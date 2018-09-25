@@ -83,7 +83,7 @@ export const MobileHero = () =>
         and his visionary seed company Row 7, we challenged ourselves to think about flavor
         differently.
       </DescriptionMobile>
-      <YouTubeModal>
+      <YouTubeModal id='t5JuuZ6thXk'>
         <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>
       </YouTubeModal>
     </SectionMobileInner>
@@ -102,7 +102,7 @@ export const DesktopHero = () =>
           seed-to-sweetgreen experience and a special Row 7 squash bred for flavor headlining
           sg menus across the country.
         </Description>
-        <YouTubeModal>
+        <YouTubeModal id='t5JuuZ6thXk'>
           <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>
         </YouTubeModal>
       </Left>

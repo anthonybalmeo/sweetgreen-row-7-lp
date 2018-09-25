@@ -122,7 +122,7 @@ export const EmailCapture = ({ inputStyle = {}, freshClass }) =>
               (
                 <InputWrapper style={{ ...inputStyle, ...{ opacity: status === "sending" ? 0.2 : 1 } }}>
                   <Envelope src={envelope} alt="" />
-                  <Input type="email" name='email' placeholder="Never miss a beet. Sign up for exclusives" onChange={e => email = e.target.value} />
+                  <Input type="email" name='email' placeholder="Enter email for exclusives" onChange={e => email = e.target.value} />
                   <Button type="submit">sign up</Button>
                 </InputWrapper>
               )
