@@ -9,9 +9,13 @@ export const HashTagStyles = styled.div`
   font-weight: 900;
   text-align: center;
   background: #213D36;
-  color: white;
+
+  a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+  }
 `
 
 export const HashTag = () => <HashTagStyles>
-  #SGXROW7
+  <a href='https://twitter.com/search?f=tweets&q=%23SGXROW7&src=typd' target='_blank'>#SGXROW7</a>
 </HashTagStyles>
