@@ -2,6 +2,7 @@ import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 import favicon from '../assets/favicon.ico'
+import ogImage from '../assets/og-image.jpg'
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -16,6 +17,8 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <title>sweetgreen ✕ Row 7</title>
+          <meta name="description" content="100,000 seeds. 6 farms. 1 quest to reimagine flavor." />
+
           {this.props.styleTags}
 
           <meta charSet="utf-8" />
@@ -27,10 +30,21 @@ export default class MyDocument extends Document {
 
           <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
 
-          <script >
 
-          </script>
+          <meta property="og:url" content="https://danbarber.sweetgreen.com" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="sweetgreen ✕ Row 7" />
+          <meta property="og:image" content={ogImage} />
+          <meta property="og:description" content="100,000 seeds. 6 farms. 1 quest to reimagine flavor." />
+          <meta property="og:site_name" content="sweetgreen ✕ Row 7" />
+          <meta property="og:locale" content="en_US" />
 
+          <meta name="twitter:card" content="100,000 seeds. 6 farms. 1 quest to reimagine flavor." />
+          <meta name="twitter:site" content="@sweetgreen" />
+          <meta name="twitter:url" content="https://danbarber.sweetgreen.com" />
+          <meta name="twitter:title" content="sweetgreen ✕ Row 7" />
+          <meta name="twitter:description" content="100,000 seeds. 6 farms. 1 quest to reimagine flavor. " />
+          <meta name="twitter:image" content={ogImage} />
 
           <script
             dangerouslySetInnerHTML={{

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import grow from './grow.jpg'
+import grow from './grow.png'
 
 const CommunityContainer = styled.div`
 `
@@ -15,7 +15,7 @@ const CommunityContent = styled.div`
       font-size: 16px;
       line-height: 32px;
       margin: 15px 0;
-      
+
     }
 `
 const CommunityImage = styled.img`

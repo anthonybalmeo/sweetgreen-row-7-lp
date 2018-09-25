@@ -54,14 +54,13 @@ export const Header = () =>
           <A href="#row7Section">Row 7 Seed Co</A>
           <A href="#farmPartnerShip">Farm Partnership</A>
           <A href="#seedToSweetgreen">Seed to Sweetgreen</A>
-          <A href="#bowlSection">The Bowl</A>
         </Desktop>
-        <GreenButton onClick={() => window.location='https://order.sweetgreen.com/'}>Order Now</GreenButton>
+        <GreenButton onClick={() => window.location = 'https://order.sweetgreen.com/'}>Order Now</GreenButton>
       </LinkWrapper>
 
     </TabletAndDesktop>
 
     <Mobile>
-      <GreenButton onClick={() => window.location='https://order.sweetgreen.com/'}>Order Now</GreenButton>
+      <GreenButton onClick={() => window.location = 'https://order.sweetgreen.com/'}>Order Now</GreenButton>
     </Mobile>
   </HeaderStyles>
