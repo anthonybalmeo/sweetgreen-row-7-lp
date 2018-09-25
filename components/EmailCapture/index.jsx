@@ -7,7 +7,7 @@ import asterisk from './asterisk.svg'
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 import { config } from '../../config';
 
-const url = "//sweetgreen.us5.list-manage.com/subscribe/post?u=REMOVEME935cde8faa405d2d908226449&amp;id=487008c6ce";
+const url = "//sweetgreen.us5.list-manage.com/subscribe/post?u=935cde8faa405d2d908226449&amp;id=e1d0c747e3";
 
 const Paragraph = styled.p`
   font-size: 14px;
