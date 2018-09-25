@@ -51,13 +51,13 @@ export const RowLessTraveledMobile = ({ rowLessTraveledData }) =>
   <RowLessTraveledContainer>
     <p>
       From the moment we learned about what Dan Barber and his Row 7 partners,
-    plant breeder Michael Mazourek, and seedsman Matthew Goldfarb, were up to
-    in the kitchen + field, we knew we wanted in. We ordered 100,000 Robin’s
-    Koginut Squash seeds before the company even launched, and planted them at
-    six of our finest farms across the country. The result: a sweet, storable
-    squash with a built-in ripeness indicator harvested and cured for peak ripeness,
-    headlining sweetgreen menus across the country. Meet our family of koginut farmers below.
-        </p>
+      plant breeder Michael Mazourek and seedsman Matthew Goldfarb, were up to
+      in the kitchen and field, we knew we wanted in. We ordered 100,000 Robin’s
+      Koginut Squash seeds before the company even launched, and planted them
+      at six of our finest farms across the country. The result: an exceptionally
+      sweet, long-storing squash harvested and cured for peak flavor, headlining
+      sweetgreen menus across the country. Meet our family of Koginut farmers below.
+    </p>
     <img src={america} alt='America' />
     <RowLessTraveledList>
       {

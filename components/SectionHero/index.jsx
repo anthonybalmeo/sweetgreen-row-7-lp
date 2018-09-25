@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import mainImage from './main-image.jpg'
 import sgRow7Logo from './sg-row-7-logo.svg'
 import future from './future.svg'
-import play from '../../assets/play.svg'
 
 import { SectionMobileInner, SectionDesktopInner } from '../Section'
 
@@ -92,16 +91,15 @@ export const DesktopHero = () =>
         <Future src={future} alt="" />
         <Description>
           100,000 seeds. 6 farms. 1 quest to reimagine flavor. This season, we joined friend and
-          food philosopher, Blue Hill Chef Dan Barber, and his visionary seed company Row 7, in
-          thinking differently about the origin of flavor in our food. The result: the first ever
-          seed-to-sweetgreen experience and a special squash bred for flavor from the seed.
+          food philosopher, Blue Hill chef Dan Barber, and his visionary seed company Row 7, in
+          thinking differently about the origin of flavor in our food. The result: the first-ever
+          seed-to-sweetgreen experience and a special Row 7 squash bred for flavor headlining
+          sg menus across the country. 
         </Description>
+        <YouTubeModal>
+          <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>
+        </YouTubeModal>
       </Left>
-
-      <YouTubeModal>
-        <Play src={play} id='NVOPXPOLYc' />
-      </YouTubeModal>
-
     </SectionDesktopInner>
   </SectionDesktopHero>
 

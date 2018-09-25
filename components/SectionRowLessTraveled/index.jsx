@@ -14,11 +14,11 @@ const rowLessTraveledData = [
   },
   {
     title: 'Ward’s Berry Farm (MA)',
-    paragraph: 'Longtime sweetgreen partners, brothers Jim and Bob Ward, have run this farm together since 1985. Jim loves to grow winter squash (of which koginut is) and often uses a “no till” system where the soil is left undisturbed before planting, a system which keeps precious organic matter intact and healthy.',
+    paragraph: 'Longtime sweetgreen partners, brothers Jim and Bob Ward, have run this farm together since 1985. Jim loves to grow winter squash (of which koginut is) and often uses a “no till” system where the soil is left undisturbed before planting, a system which keeps precious organic matter intact and healthy.	',
   },
   {
     title: 'Cedar Meadow Farm (PA)',
-    paragraph: 'Following childhood dreams of joining the family business, Steve Groff has tended to his farm for over 25 years. What started as a hay and grain operation in 1935 has transformed into a mecca for thriving tomatoes, sweet corn, pumpkins, and now the koginut squash. An advocate of no-till farming—some of his fields have not been tilled in over 30 years!',
+    paragraph: 'Following childhood dreams of joining the family business, Steve Groff has tended to his farm for over 25 years. What started as a hay and grain operation in 1935 has transformed into a mecca for tomatoes, sweet corn, pumpkins, and now the koginut squash. An advocate of no-till farming—some of his fields have not been tilled in over 30 years!',
   },
   {
     title: 'Nichols Farm (IL)',
@@ -26,11 +26,11 @@ const rowLessTraveledData = [
   },
   {
     title: 'Riverdog Farm (CA)',
-    paragraph: 'In 1991, Tim Mueller forayed into farming with two rented two acres in Napa Valley. 5 years later, he relocated to Capay Valley in Yolo County, where the hot summer months and frosty winters enhance crop flavor. Just outside of San Francisco, his crops now grow on 450 acres of certified organic land and provide seasonal food to his local community for over 25 years.',
+    paragraph: 'In 1991, Tim Mueller forayed into farming with a rented two acres in Napa Valley. 5 years later, he relocated to Capay Valley in Yolo County, where the hot summer months and frosty winters enhance crop flavor. Just outside of San Francisco, his crops now grow on 450 acres of certified organic land and provide seasonal food to his local community for over 25 years.',
   },
   {
     title: 'Weiser Family Farm (CA)',
-    paragraph: 'Formerly an East L.A. chemistry teacher, Sid Weiser packed up his family in 1978 and moved to Northern California to work the land. Now operated by his children, the farm is dedicated to using sustainable and bio-diverse farming techniques and only harvesting at peak ripeness.',
+    paragraph: 'Formerly an East L.A. chemistry teacher, Sid Weiser packed up his family in 1978 and moved to Northern California to work the land. Now operated by his children, the farm is dedicated to using sustainable and biodiverse farming techniques and harvesting exclusively at peak ripeness.',
   },
 ]
 
