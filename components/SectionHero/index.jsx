@@ -69,6 +69,10 @@ const Play = styled.img`
   cursor:pointer;
 `
 
+const Spacer = styled.div`
+  height: 70px;
+`
+
 export const MobileHero = () =>
   <SectionMobileHero>
     <SectionMobileInner>
@@ -94,7 +98,7 @@ export const DesktopHero = () =>
           food philosopher, Blue Hill chef Dan Barber, and his visionary seed company Row 7, in
           thinking differently about the origin of flavor in our food. The result: the first-ever
           seed-to-sweetgreen experience and a special Row 7 squash bred for flavor headlining
-          sg menus across the country. 
+          sg menus across the country.
         </Description>
         <YouTubeModal>
           <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>
@@ -105,6 +109,7 @@ export const DesktopHero = () =>
 
 export const SectionHero = () =>
   <React.Fragment>
+    <Spacer />
     <Mobile>
       <MobileHero />
     </Mobile>
