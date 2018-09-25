@@ -8,6 +8,7 @@ import { SectionHero } from '../components/SectionHero'
 import { Timeline } from '../components/Timeline'
 import { CommunitySection } from '../components/CommunitySection'
 import { Footer } from '../components/Footer'
+import { HashTag } from '../components/HashTag'
 import { SectionRow7 } from '../components/SectionRow7'
 import { SectionRowLessTraveled } from '../components/SectionRowLessTraveled'
 import { BowlSection } from '../components/BowlSection'
@@ -23,8 +24,9 @@ export default () =>
     <SectionRow7 />
     <SectionRowLessTraveled />
     <Timeline />
-    { /*<BowlSection />*/ }
+    { /*<BowlSection />*/}
     <CommunitySection />
+    <HashTag />
     <Footer />
   </React.Fragment>
 

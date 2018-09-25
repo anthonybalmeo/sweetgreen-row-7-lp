@@ -50,30 +50,8 @@ const Greeting = styled.div`
 export const SectionRow7 = () =>
   <SectionDesktop bg={'white'} id="row7Section">
     <SectionHeader>
-      Row 7 Seed Co
+      A Letter From Dan Barber
     </SectionHeader>
-
-    <div>
-      <img src={row7} alt="" />
-    </div>
-
-    <ChunkContainer>
-      <Chunk>
-        <Text>
-          Founded by Chef Dan Barber, vegetable breeder Michael Mazourek
-          and organic seedsman Matthew Goldfarb, Row 7 is a seed company
-          grounded in the notion that deliciousness can change the world.
-          Row 7 pairs chefs and plant breeders to develop new varieties
-          of vegetables and grains that make an impact in the soil and
-          at the table, striving to make ingredients taste better before
-          they ever hit a plate.
-        </Text>
-      </Chunk>
-
-      <Chunk>
-        <img src={squash} alt="" style={{ width: "100%", marginBottom: '16px' }} />
-      </Chunk>
-    </ChunkContainer>
 
     <ChunkContainer>
       <Chunk>
@@ -81,12 +59,6 @@ export const SectionRow7 = () =>
       </Chunk>
 
       <Chunk>
-        <Quote src={smartquote} />
-
-        <Greeting>
-          Dear lettuce heads,
-        </Greeting>
-
         <Text>
           This story begins with a seed. Actually, scratch that. It begins with 100,000 seeds and a phone call we received the day before Row 7’s launch. The call came from Nic Jammet, sweetgreen co-founder, who said he wanted to feature Row 7 in stores nationwide. I thought he was kidding. Then he placed an order for 100,000 squash seeds, and suddenly our not-yet-launched seed company had coast-to-coast roots.
         </Text>

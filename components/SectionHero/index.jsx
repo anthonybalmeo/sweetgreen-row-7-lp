@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import mainImage from './main-image.jpg'
 import sgRow7Logo from './sg-row-7-logo.svg'
 import future from './future.svg'
+import play from '../../assets/play.svg'
 
 import { SectionMobileInner, SectionDesktopInner } from '../Section'
 
@@ -106,6 +107,10 @@ export const DesktopHero = () =>
           <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>
         </YouTubeModal>
       </Left>
+
+      <YouTubeModal id='NVOPXPOLYc'>
+        <Play src={play} />
+      </YouTubeModal>
     </SectionDesktopInner>
   </SectionDesktopHero>
 
