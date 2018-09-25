@@ -6,7 +6,7 @@ import { SectionHeader } from '../SectionHeader'
 import row7 from './row7.svg'
 import squash from './squash.jpg'
 import chefSalad from './chef-salad.jpg'
-import quote from './quote.png'
+import smartquote from './smartquote.png'
 import { config } from '../../config';
 
 const Chunk = styled.div`
@@ -81,7 +81,7 @@ export const SectionRow7 = () =>
       </Chunk>
 
       <Chunk>
-        <Quote src={quote} />
+        <Quote src={smartquote} />
 
         <Greeting>
           Dear lettuce heads,
