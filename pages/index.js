@@ -21,11 +21,19 @@ export default () =>
   <React.Fragment>
     <Header />
     <SectionHero />
-    <SectionRow7 />
-    <SectionRowLessTraveled />
+    {
+      /*
+      <SectionRow7/>
+      <SectionRowLessTraveled />
+      */
+    }
     <Timeline />
-    { /*<BowlSection />*/}
-    <CommunitySection />
+    {
+      /*
+      <BowlSection />
+      <CommunitySection />
+      */
+    }
     <HashTag />
     <Footer />
   </React.Fragment>

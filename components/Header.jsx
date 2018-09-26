@@ -8,7 +8,7 @@ const Logo = styled.img`
 `
 
 const LinkWrapper = styled.div`
-  width: 800px;
+  width: 400px;
   justify-content: space-around;
   display: flex;
   align-items: center;
@@ -51,8 +51,12 @@ export const Header = () =>
 
       <LinkWrapper>
         <Desktop>
-          <A href="#row7Section">Row 7 Seed Co</A>
-          <A href="#farmPartnerShip">Farmers</A>
+          {
+          /*
+            <A href="#row7Section">Row 7 Seed Co</A>
+            <A href="#farmPartnerShip">Farmers</A>
+          */
+           }
           <A href="#seedToSweetgreen">Go Behind the Seeds</A>
         </Desktop>
         <GreenButton onClick={() => window.location = 'https://order.sweetgreen.com/'}>Order Now</GreenButton>

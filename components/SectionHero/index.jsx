@@ -80,9 +80,11 @@ export const MobileHero = () =>
       <SGRow7 src={sgRow7Logo} alt="" />
       <FutureMobile src={future} alt="" />
       <DescriptionMobile>
-        This season, with the help of our friend and collaborator, Blue Hill Chef Dan Barber,
-        and his visionary seed company Row 7, we challenged ourselves to think about flavor
-        differently.
+          This season, we joined friend and food philosopher, Blue Hill chef Dan Barber,
+          and his visionary seed company Row 7, in thinking differently about the origin
+          of flavor in our food. The result: the first-ever seed-to-sweetgreen experience
+          and a special Row 7 squash bred for flavor, headlining sg menus across the country.
+          In stores 11/1.
       </DescriptionMobile>
       <YouTubeModal id='t5JuuZ6thXk'>
         <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>
@@ -97,11 +99,11 @@ export const DesktopHero = () =>
         <img src={sgRow7Logo} alt="" />
         <Future src={future} alt="" />
         <Description>
-          This season, we joined friend and
-          food philosopher, Blue Hill chef Dan Barber, and his visionary seed company Row 7, in
-          thinking differently about the origin of flavor in our food. The result: the first-ever
-          seed-to-sweetgreen experience and a special Row 7 squash bred for flavor headlining
-          sg menus across the country.
+          This season, we joined friend and food philosopher, Blue Hill chef Dan Barber,
+          and his visionary seed company Row 7, in thinking differently about the origin
+          of flavor in our food. The result: the first-ever seed-to-sweetgreen experience
+          and a special Row 7 squash bred for flavor, headlining sg menus across the country.
+          In stores 11/1.
         </Description>
         <YouTubeModal id='t5JuuZ6thXk'>
           <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>

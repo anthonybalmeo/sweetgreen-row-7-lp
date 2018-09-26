@@ -17,14 +17,14 @@ const TimelineWrapper = styled.div`
   height: 100%;
   position: relative;
   width: 100%;
+  padding-top: 60px;
 `
 
 const TimelineLogo = styled.img`
   display: block;
   height: 204px;
-  margin: 0 auto -80px;
+  margin: 0 auto 60px;
   src: url(${props => props.src});
-  transform: translateY(-63%);
   width: 137px;
 `
 
