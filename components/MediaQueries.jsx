@@ -1,28 +1,44 @@
 
 import React from 'react';
 import MediaQuery from 'react-responsive'
+import styled from 'styled-components'
 
-export const Desktop = ({ children }) =>
-  <MediaQuery minWidth={1100}>
-    {children}
-  </MediaQuery>
+export const Desktop = styled.div`
+  display: none;
 
-export const Mobile = ({ children }) =>
-  <MediaQuery maxWidth={600}>
-    {children}
-  </MediaQuery>
+  @media only screen and (min-width: 1100px) {
+    display: block;
+  }
+`
 
-export const MobileAndTablet = ({ children }) =>
-  <MediaQuery maxWidth={1100}>
-    {children}
-  </MediaQuery>
+export const Mobile = styled.div`
+  display: none;
 
-export const Tablet = ({ children }) =>
-  <MediaQuery maxWidth={1100} minWidth={600}>
-    {children}
-  </MediaQuery>
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
+`
 
-export const TabletAndDesktop = ({ children }) =>
-  <MediaQuery minWidth={600}>
-    {children}
-  </MediaQuery>
+export const MobileAndTablet = styled.div`
+  display: none;
+
+  @media only screen and (max-width: 1100px) {
+    display: block;
+  }
+`
+
+export const Tablet = styled.div`
+  display: none;
+
+  @media only screen and (min-width: 600px) and max-width(1100px) {
+    display: block;
+  }
+`
+
+export const TabletAndDesktop = styled.div`
+  display: none;
+
+  @media only screen and (min-width: 600px) {
+    display: block;
+  }
+`
