@@ -8,7 +8,7 @@ import play from '../../assets/play.svg'
 
 import { SectionMobileInner, SectionDesktopInner } from '../Section'
 
-import { Mobile, TabletAndDesktop } from '../MediaQueries'
+import { Mobile, TabletAndDesktop, Desktop } from '../MediaQueries'
 import { WhiteOutlineButton } from '../Button';
 import { YouTubeModal } from '../YoutubeModal';
 
@@ -24,6 +24,7 @@ const SectionDesktopHero = styled.div`
   width: 100%;
   padding: 80px 0;
   position: relative;
+}
   `
 
 const SectionMobileHero = styled.div`
@@ -66,7 +67,7 @@ const SGRow7 = styled.img`
 const Play = styled.img`
   position: absolute;
   top: 45%;
-  left: 70%;
+  left: 50%;
   cursor:pointer;
 `
 
@@ -75,10 +76,9 @@ const Spacer = styled.div`
 `
 
 const copy = `
-This season, we joined friend and food philosopher, Blue Hill chef Dan Barber, and his
-visionary seed company Row 7, in thinking differently about the origin of flavor in our food.
-The result: the first-ever seed-to-sweetgreen experience and a special Row 7 squash bred for
-flavor, headlining sg menus across the country. In stores 11/1.`
+This season, we joined friend and food philosopher, Blue Hill chef Dan Barber, and his visionary seed
+company Row 7, in thinking differently about the origin of flavor in our food. The result: the first-ever
+seed-to-sweetgreen experience and a special Row 7 squash bred for flavor. In stores 11/1.`
 
 export const MobileHero = () =>
   <SectionMobileHero>
@@ -108,9 +108,12 @@ export const DesktopHero = () =>
         </YouTubeModal>
       </Left>
 
-      <YouTubeModal id='t5JuuZ6thXk'>
-        <Play src={play} />
-      </YouTubeModal>
+      <Desktop>
+        <YouTubeModal id='t5JuuZ6thXk'>
+          <Play src={play} className='play' />
+        </YouTubeModal>
+      </Desktop>
+
     </SectionDesktopInner>
   </SectionDesktopHero>
 
