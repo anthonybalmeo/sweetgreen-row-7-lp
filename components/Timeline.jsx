@@ -19,7 +19,7 @@ const timelineData = [
   {
     order: 'right-to-left offset-spacing-bottom',
     title: 'February 27th: Row Seed Company launches',
-    paragraph: 'Among their offerings is Robin‘s Koginut squash, the result of a years of field and kitchen co-selection by vegetable breeder Michael Mazourek and chef Dan Barber.',
+    paragraph: 'Among their offerings is Robin‘s Koginut squash, the result of years of field and kitchen co-selection by vegetable breeder Michael Mazourek and chef Dan Barber.',
     image: null,
     illustrationImg: null,
   },
@@ -49,7 +49,7 @@ const timelineData = [
   {
     order: 'left-to-right',
     title: 'June 2nd: Sprouts begin to show',
-    paragraph: 'Feedback on germination is good. Leaves have sprouted and farmers are beginning to cultivate the field.',
+    paragraph: 'Feedback on germination is good. Leaves have emerged and farmers are preparing their fields for transplanting.',
     image: {
       url: plant,
       alt: 'June 2nd: Sprouts begin to show - Plant',
@@ -93,7 +93,7 @@ const timelineData = [
   {
     order: 'right-to-left',
     title: 'July 25th: Chicago',
-    paragraph: 'Nichols Farm had a little bit of a wash out, but only a small percent of crop was affected. With the rain and heat, they still look great. Experience harvest date is September 1st.',
+    paragraph: 'Nichols Farm had a little bit of a wash out, but only a small percent of crop was affected. With the rain and heat, they still look great. Expected harvest date is September 1st.',
     image: null,
     illustrationImg: null,
   },

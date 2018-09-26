@@ -5,6 +5,7 @@ import { TabletAndDesktop, Mobile, Desktop } from './MediaQueries'
 
 const Logo = styled.img`
   height: 24px;
+  cursor: pointer;
 `
 
 const LinkWrapper = styled.div`
@@ -45,19 +46,19 @@ const HeaderStyles = styled.header`
 
 export const Header = () =>
   <HeaderStyles>
-    <Logo src={logo} />
+    <Logo src={logo} onClick={() => window.location = 'https://order.sweetgreen.com/'} />
 
     <TabletAndDesktop>
 
       <LinkWrapper>
         <Desktop>
           {
-          /*
-            <A href="#row7Section">Row 7 Seed Co</A>
-            <A href="#farmPartnerShip">Farmers</A>
-          */
-           }
-          <A href="#seedToSweetgreen">Go Behind the Seeds</A>
+            /*
+              <A href="#row7Section">Row 7 Seed Co</A>
+              <A href="#farmPartnerShip">Farmers</A>
+            */
+          }
+          {/* <A href="#seedToSweetgreen">Go Behind the Seeds</A> */}
         </Desktop>
         <GreenButton onClick={() => window.location = 'https://order.sweetgreen.com/'}>Order Now</GreenButton>
       </LinkWrapper>

@@ -74,20 +74,22 @@ const Spacer = styled.div`
   height: 70px;
 `
 
+const copy = `
+This season, we joined friend and food philosopher, Blue Hill chef Dan Barber, and his
+visionary seed company Row 7, in thinking differently about the origin of flavor in our food.
+The result: the first-ever seed-to-sweetgreen experience and a special Row 7 squash bred for
+flavor, headlining sg menus across the country. In stores 11/1.`
+
 export const MobileHero = () =>
   <SectionMobileHero>
     <SectionMobileInner>
       <SGRow7 src={sgRow7Logo} alt="" />
       <FutureMobile src={future} alt="" />
       <DescriptionMobile>
-        This season, we joined friend and food philosopher, Blue Hill chef Dan Barber,
-        and his visionary seed company Row 7, in thinking differently about the origin
-        of flavor in our food. The result: the first-ever seed-to-sweetgreen experience
-        and a special Row 7 squash bred for flavor, headlining sg menus across the country.
-        In stores 11/1.
+        {copy}
       </DescriptionMobile>
       <YouTubeModal id='t5JuuZ6thXk'>
-        <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>
+        <WhiteOutlineButton style={{ width: '140px' }}>Watch Now</WhiteOutlineButton>
       </YouTubeModal>
     </SectionMobileInner>
   </SectionMobileHero>
@@ -99,18 +101,14 @@ export const DesktopHero = () =>
         <img src={sgRow7Logo} alt="" />
         <Future src={future} alt="" />
         <Description>
-          This season, we joined friend and food philosopher, Blue Hill chef Dan Barber,
-          and his visionary seed company Row 7, in thinking differently about the origin
-          of flavor in our food. The result: the first-ever seed-to-sweetgreen experience
-          and a special Row 7 squash bred for flavor, headlining sg menus across the country.
-          In stores 11/1.
+          {copy}
         </Description>
         <YouTubeModal id='t5JuuZ6thXk'>
-          <WhiteOutlineButton style={{ width: '140px' }}>Watch</WhiteOutlineButton>
+          <WhiteOutlineButton style={{ width: '140px' }}>Watch Now</WhiteOutlineButton>
         </YouTubeModal>
       </Left>
 
-      <YouTubeModal id='NVOPXPOLYc'>
+      <YouTubeModal id='t5JuuZ6thXk'>
         <Play src={play} />
       </YouTubeModal>
     </SectionDesktopInner>
