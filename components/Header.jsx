@@ -50,18 +50,14 @@ export const Header = () =>
 
     <TabletAndDesktop>
 
-      <LinkWrapper>
+      {/* <LinkWrapper>
         <Desktop>
-          {
-            /*
-              <A href="#row7Section">Row 7 Seed Co</A>
-              <A href="#farmPartnerShip">Farmers</A>
-            */
-          }
-          {/* <A href="#seedToSweetgreen">Go Behind the Seeds</A> */}
+          <A href="#row7Section">Row 7 Seed Co</A>
+          <A href="#farmPartnerShip">Farmers</A>
+          <A href="#seedToSweetgreen">Go Behind the Seeds</A>
         </Desktop>
-        <GreenButton onClick={() => window.location = 'https://order.sweetgreen.com/'}>Order Now</GreenButton>
-      </LinkWrapper>
+      </LinkWrapper> */}
+      <GreenButton onClick={() => window.location = 'https://order.sweetgreen.com/'}>Order Now</GreenButton>
 
     </TabletAndDesktop>
 
