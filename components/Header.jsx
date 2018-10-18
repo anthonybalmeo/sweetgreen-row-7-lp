@@ -9,14 +9,9 @@ const Logo = styled.img`
 `
 
 const LinkWrapper = styled.div`
-  width: 400px;
   justify-content: space-around;
   display: flex;
   align-items: center;
-
-  @media only screen and (max-width: 1100px) {
-    justify-content: flex-end;
-  }
 `
 
 const A = styled.a`
@@ -25,6 +20,7 @@ const A = styled.a`
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: bold;
+  margin-right: 30px;
 
   &, &:active, &:hover {
     text-decoration: none;
@@ -49,15 +45,15 @@ export const Header = () =>
     <Logo src={logo} onClick={() => window.location = 'https://order.sweetgreen.com/'} />
 
     <TabletAndDesktop>
-
-      {/* <LinkWrapper>
+      <LinkWrapper>
         <Desktop>
-          <A href="#row7Section">Row 7 Seed Co</A>
-          <A href="#farmPartnerShip">Farmers</A>
-          <A href="#seedToSweetgreen">Go Behind the Seeds</A>
+          <A href="#partners">Farmer Partners</A>
+          <A href="#seed-to-sweetgreen">Seed to Sweetgreen</A>
+          <A href="#bowl-section">The Bowl</A>
+          <A href="#dan-barber">Dan Barber Letter</A>
         </Desktop>
-      </LinkWrapper> */}
-      <GreenButton onClick={() => window.location = 'https://order.sweetgreen.com/'}>Order Now</GreenButton>
+        <GreenButton onClick={() => window.location = 'https://order.sweetgreen.com/'}>Order Now</GreenButton>
+      </LinkWrapper>
 
     </TabletAndDesktop>
 

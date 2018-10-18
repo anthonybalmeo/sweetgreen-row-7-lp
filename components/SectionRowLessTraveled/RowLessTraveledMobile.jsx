@@ -3,8 +3,10 @@ import styled from 'styled-components'
 import america from './america.png'
 import { config } from '../../config'
 
+import { H1Mobile } from '../TypeElements'
+
+
 const RowLessTraveledContainer = styled.div`
-  padding-bottom: 56px;
   margin: 0 auto;
 
   & > img {
@@ -20,9 +22,25 @@ const RowLessTraveledContainer = styled.div`
   }
 `
 const RowLessTraveledList = styled.ul`
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 `
+
+const RowLessTraveledSwiper = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+`
+
 const RowLessTraveledListItem = styled.li`
-  margin-bottom: 40px;
+  margin-bottom: 1px;
+  margin-right: 10px;;
+  float: left;
+  display: inline-block;
+  width: 260px;
+  flex: 0 0 auto;
 `
 
 const RowLessTraveledTitle = styled.div`
@@ -49,25 +67,19 @@ const RowLessTraveledIndex = styled.div`
 
 export const RowLessTraveledMobile = ({ rowLessTraveledData }) =>
   <RowLessTraveledContainer>
-    <p>
-      From the moment we learned about what Dan Barber and his Row 7 partners,
-      plant breeder Michael Mazourek and seedsman Matthew Goldfarb, were up to
-      in the kitchen and field, we knew we wanted in. We ordered 100,000 Robin’s
-      Koginut Squash seeds before the company even launched, and planted them
-      at six of our finest farms across the country. The result: an exceptionally
-      sweet, long-storing squash harvested and cured for peak flavor, headlining
-      sweetgreen menus across the country. Meet our family of Koginut farmers below.
-    </p>
+    <H1Mobile>
+      Meet the six farmers taking the koginut squash from seed-to-sweetgreen
+    </H1Mobile>
     <img src={america} alt='America' />
     <RowLessTraveledList>
       {
-        rowLessTraveledData.map((data, i) => (
-          <RowLessTraveledListItem key={i}>
-            <RowLessTraveledIndex>{i + 1}</RowLessTraveledIndex>
-            <RowLessTraveledTitle>{data.title}</RowLessTraveledTitle>
-            <RowLessTraveledParagraph>{data.paragraph}</RowLessTraveledParagraph>
-          </RowLessTraveledListItem>
-        ))
-      }
+          rowLessTraveledData.map((data, i) => (
+              <RowLessTraveledListItem key={i}>
+                <RowLessTraveledIndex>{i + 1}</RowLessTraveledIndex>
+                <RowLessTraveledTitle>{data.title}</RowLessTraveledTitle>
+                <RowLessTraveledParagraph>{data.paragraph}</RowLessTraveledParagraph>
+              </RowLessTraveledListItem>
+            ))
+          }
     </RowLessTraveledList>
   </RowLessTraveledContainer>

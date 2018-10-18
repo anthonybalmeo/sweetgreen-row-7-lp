@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import america from './america.png'
 import { config } from '../../config'
+import { H1 } from '../TypeElements'
 
 const RowLessTraveledWrapper = styled.div`
   padding-bottom: 100px;
@@ -69,15 +70,9 @@ export const RowLessTraveledDesktop = (props) => {
     <RowLessTraveledWrapper>
       <RowLessTraveledContainer>
       <RowLessTraveledDoubleColumn>
-          <p>
-            From the moment we learned about what Dan Barber and his Row 7 partners,
-            plant breeder Michael Mazourek and seedsman Matthew Goldfarb, were up to
-            in the kitchen and field, we knew we wanted in. We ordered 100,000 Robin’s
-            Koginut Squash seeds before the company even launched, and planted them
-            at six of our finest farms across the country. The result: an exceptionally
-            sweet, long-storing squash harvested and cured for peak flavor, headlining
-            sweetgreen menus across the country. Meet our family of Koginut farmers below.
-          </p>
+          <H1>
+          Meet the six farmers taking the koginut squash from seed-to-sweetgreen
+          </H1>
         </RowLessTraveledDoubleColumn>
       <RowLessTraveledDoubleColumn>
           <img src={america} alt='America'/>

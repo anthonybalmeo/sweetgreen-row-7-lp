@@ -10,7 +10,7 @@ import { SectionDesktop } from '../Section'
 import { SectionHeader } from '../SectionHeader'
 
 export const BowlSection = () =>
-  <SectionDesktop bg={config.colors.pageGray} id="bowlSection">
+  <SectionDesktop bg='white' id="bowl-section">
     <SectionHeader>
       The Bowl
     </SectionHeader>

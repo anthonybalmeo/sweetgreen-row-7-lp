@@ -35,7 +35,7 @@ const rowLessTraveledData = [
 ]
 
 export const SectionRowLessTraveled = () =>
-  <SectionDesktop bg={config.colors.pageGray} id="farmPartnerShip">
+  <SectionDesktop bg='white' id="farm-partnership">
     <SectionHeader>
       The Row Less Traveled
     </SectionHeader>

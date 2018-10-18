@@ -48,7 +48,7 @@ const Greeting = styled.div`
 `
 
 export const SectionRow7 = () =>
-  <SectionDesktop bg={'white'} id="row7Section">
+  <SectionDesktop bg={config.colors.pageGray} id="dan-barber">
     <SectionHeader>
       A Letter From Dan Barber
     </SectionHeader>

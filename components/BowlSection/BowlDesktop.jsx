@@ -5,6 +5,7 @@ import theBowl from './bowl.jpg'
 import roastedSquashFries from './roasted-squash-fries.jpg'
 import arrives from './nov1.png'
 import { config } from '../../config'
+import { H1, P } from '../TypeElements'
 
 const BowlContainer = styled.div`
   display: flex;
@@ -29,18 +30,7 @@ const BowlColumns = styled.div`
     padding-left: 30px;
   }
 
-  & > h1 {
-    font-family: 'Sweetlife Medium';
-    font-weight: normal;
-    letter-spacing: 1.6px;
-    color: ${config.colors.green};
-    font-size: 32px;
-    margin-top: 0;
-  }
-
   & > p {
-    font-size: 14px;
-    line-height: 24px;
     width: 450px;
   }
 `
@@ -59,12 +49,12 @@ export const BowlDesktop = () =>
   <>
     <BowlContainer className='spacing-bottom'>
       <BowlColumns className='width-55'>
-        <h1>Koginut Squash Bowl by Dan&nbsp;Barber sweetgreen x row 7</h1>
-        <p>
+        <H1>Koginut Squash Bowl by Dan&nbsp;Barber sweetgreen x row 7</H1>
+        <P>
           Roasted koginut squash, pears, sliced fennel, basil, local goat cheese,
           raw walnuts, toasted almonds, toasted buckwheat, organic wild rice, organic
           spinach, lemon squeeze, balsamic vinaigrette  (730 cal)
-        </p>
+        </P>
         <ArrivingImg src={arrives} alt='Arrives Nov. 1st' />
       </BowlColumns>
       <BowlColumns className='width-45'>
@@ -76,10 +66,10 @@ export const BowlDesktop = () =>
         <BowlImg src={roastedSquashFries} alt='Roasted Squash Fries' />
       </BowlColumns>
       <BowlColumns className='width-55 spacing-left'>
-        <h1>Roasted Squash Fries by Dan&nbsp;Barber sweetgreen x row 7</h1>
-        <p>
-          Roasted koginut squash, smoked goat cheese dip, toasted buckwheat, ground dried lime 
-        </p>
+        <H1>Roasted Squash Fries by Dan&nbsp;Barber sweetgreen x row 7</H1>
+        <P>
+          Roasted koginut squash, smoked goat cheese dip, toasted buckwheat, ground dried lime
+        </P>
         <ArrivingImg src={arrives} alt='Arrives Nov. 1st' />
       </BowlColumns>
     </BowlContainer>

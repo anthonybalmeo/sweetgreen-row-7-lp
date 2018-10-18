@@ -10,9 +10,9 @@ import { SectionDesktop } from '../Section'
 import { SectionHeader } from '../SectionHeader'
 
 export const CommunitySection = () =>
-  <SectionDesktop bg={config.colors.pageGray} id="communitySection">
+  <SectionDesktop bg='white' id="partners">
     <SectionHeader>
-      Commmunity
+      Our Partners
     </SectionHeader>
     <MobileAndTablet>
       <CommunityMobile />

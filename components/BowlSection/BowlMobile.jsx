@@ -5,6 +5,8 @@ import roastedSquashFries from './roasted-squash-fries.jpg'
 import arrives from './nov1.png'
 import { config } from '../../config'
 
+import { H1Mobile, P } from '../TypeElements'
+
 const BowlContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -15,9 +17,14 @@ const BowlColumns = styled.div`
   width: 100%;
 
   & > h1 {
-    font-family: 'Sweetlife Medium';
+    font-family: 'Gotham Book';
     color: ${config.colors.green};
-    font-size: 30px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 34px;
+    font-weight: normal;
+    text-transform: uppercase;
+
     margin: 60px auto 15px;
     max-width: 375px;
   }
@@ -54,22 +61,22 @@ export const BowlMobile = () =>
       <BowlImg src={theBowl} alt='Koginut Squash Bowl' />
     </BowlColumns>
     <BowlColumns>
-      <h1>Koginut Squash Bowl by Dan&nbsp;Barber sweetgreen x row 7</h1>
-      <p>
+      <H1Mobile>Koginut Squash Bowl by Dan&nbsp;Barber sweetgreen x row 7</H1Mobile>
+      <P>
         Roasted koginut squash, pears, sliced fennel, basil, local goat cheese,
         raw walnuts, toasted almonds, toasted buckwheat, organic wild rice, organic
         spinach, lemon squeeze, balsamic vinaigrette  (730 cal)
-      </p>
+      </P>
       <ArrivingImg src={arrives} alt='Arrives Nov. 1st' className='spacing-bottom' />
     </BowlColumns>
     <BowlColumns>
       <BowlImg src={roastedSquashFries} alt='Roasted Squash Fries' />
     </BowlColumns>
     <BowlColumns>
-      <h1>Roasted Squash Fries by Dan&nbsp;Barber sweetgreen x row 7</h1>
-      <p>
+      <H1Mobile>Roasted Squash Fries by Dan&nbsp;Barber sweetgreen x row 7</H1Mobile>
+      <P>
         Roasted koginut squash, smoked goat cheese dip, toasted buckwheat, ground dried lime
-      </p>
+      </P>
       <ArrivingImg src={arrives} alt='Arrives Nov. 1st' />
     </BowlColumns>
   </BowlContainer>

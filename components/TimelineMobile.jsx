@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 import LazyLoad from 'react-lazyload'
+import { config } from '../config'
 
 const fadeIn = keyframes`
   from {
@@ -13,7 +14,7 @@ const fadeIn = keyframes`
 `
 
 const TimelineWrapper = styled.div`
-  background: #FFFFFF;
+  background: ${config.colors.pageGray};
   height: 100%;
   width: 100%;
   padding-top: 60px;
@@ -28,7 +29,6 @@ const TimelineLogo = styled.img`
 `
 
 const TimelineContainer = styled.div`
-  background: white;
   height: 100%;
   margin: 0 auto 70px;
   max-width: 375px;
@@ -62,7 +62,7 @@ const CopyContainer = styled.div `
 const Title = styled.h5`
   color: #1F4F46;
   font-family: 'Flama Condensed';
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   margin: 0;
   text-transform: uppercase;

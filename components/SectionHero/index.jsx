@@ -1,7 +1,6 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import mainImage from './main-image.jpg'
 import sgRow7Logo from './sg-row-7-logo.svg'
 import future from './100.svg'
 import play from '../../assets/play.svg'
@@ -17,22 +16,15 @@ const SectionDesktopHero = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: url(${mainImage}) no-repeat center center;
-  background-size: cover;
-
   width: 100%;
   padding: 80px 0;
   position: relative;
-}
+  overflow: hidden;
   `
 
 const SectionMobileHero = styled.div`
-  background: url(${mainImage});
-  background-size: 1070px;
-  background-position: 900px;
-  background-size: cover;
-  padding: 56px 0;
+  position: relative;
+  overflow: hidden;
 `
 
 const Description = styled.p`
@@ -75,6 +67,22 @@ const Spacer = styled.div`
   height: 70px;
 `
 
+const Video = styled.video`
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: -20%;
+  z-index: 1;
+
+  @media only screen and (min-width: 600px) {
+    & {
+      left: -10%;
+      right: -10%;
+      height: auto;
+    }
+}
+`
+
 const copy = `
 This season, we joined friend and food philosopher, Blue Hill chef Dan Barber, and his visionary seed
 company Row 7, in thinking differently about the origin of flavor in our food. The result: the first-ever
@@ -82,29 +90,36 @@ seed-to-sweetgreen experience and a special Row 7 squash bred for flavor. In sto
 
 export const MobileHero = () =>
   <SectionMobileHero>
-    <SectionMobileInner>
+    <Video autoPlay muted loop playsInline>
+      <source src='/static/farm.mp4' type="video/mp4" />
+    </Video>
+    <SectionMobileInner style={{ position: 'relative', zIndex: 2 }}>
       <SGRow7 src={sgRow7Logo} alt="" />
-      <FutureMobile src={future} alt="" />
+      <FutureMobile src={future} alt="100,000 seeds. 6 farms. 1 quest to reimagine flavor. " />
       <DescriptionMobile>
         {copy}
       </DescriptionMobile>
       <YouTubeModal id='t5JuuZ6thXk'>
-        <WhiteOutlineButton style={{ width: '140px' }}>Watch Now</WhiteOutlineButton>
+        <WhiteOutlineButton style={{ width: '140px' }}>Watch The Film</WhiteOutlineButton>
       </YouTubeModal>
     </SectionMobileInner>
   </SectionMobileHero>
 
 export const DesktopHero = () =>
   <SectionDesktopHero>
-    <SectionDesktopInner>
+    <Video autoPlay muted loop>
+      <source src='/static/farm.mp4' type="video/mp4" />
+    </Video>
+
+    <SectionDesktopInner style={{ position: 'relative', zIndex: 2 }}>
       <Left>
         <img src={sgRow7Logo} alt="" />
-        <Future src={future} alt="" />
+        <Future src={future} alt="100,000 seeds. 6 farms. 1 quest to reimagine flavor. " />
         <Description>
           {copy}
         </Description>
         <YouTubeModal id='t5JuuZ6thXk'>
-          <WhiteOutlineButton style={{ width: '140px' }}>Watch Now</WhiteOutlineButton>
+          <WhiteOutlineButton style={{ width: '140px' }}>Watch The Film</WhiteOutlineButton>
         </YouTubeModal>
       </Left>
 
