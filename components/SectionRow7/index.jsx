@@ -68,11 +68,7 @@ export const SectionRow7 = () =>
         </Text>
 
         <Text>
-          We launched Row 7 to bring those ingredients beyond the walls of white tablecloth restaurants and onto plates everywhere. The squash at the center of this sweetgreen x Row 7 collaboration—Robin’s Koginut squash—is a prime example. Bred by Michael Mazourek (Row 7 co-founder and chief cucurbit officer), it has a sweet, squash-y flavor, smooth texture and a built-in ripeness indicator—a seemingly small tweak with a heroic function. Squash on the vine turn from green to gold when ripe, ensuring that each Koginut is picked at peak flavor and nutrition. (Think: vine-ripened squash as the new vine-ripened tomatoes ato.) Here is a squash that can help change our diets, and our landscapes, from the ground up.
-        </Text>
-
-        <Text>
-          We are starting a flavor MUTINY, and sweetgreen was one of the first to join. We hope you will too.
+          We launched Row 7 to bring those ingredients beyond the walls of white tablecloth restaurants and onto plates everywhere. We are starting a flavor MUTINY, and sweetgreen was one of the first to join. We hope you will too.
         </Text>
 
         <Text>

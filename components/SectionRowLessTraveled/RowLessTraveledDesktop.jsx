@@ -74,7 +74,7 @@ export const RowLessTraveledDesktop = (props) => {
           Meet the six farmers taking the koginut squash from seed-to-sweetgreen
           </H1>
         </RowLessTraveledDoubleColumn>
-      <RowLessTraveledDoubleColumn>
+        <RowLessTraveledDoubleColumn>
           <img src={america} alt='America'/>
         </RowLessTraveledDoubleColumn>
       </RowLessTraveledContainer>

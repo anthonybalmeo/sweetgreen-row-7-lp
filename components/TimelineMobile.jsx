@@ -26,6 +26,7 @@ const TimelineLogo = styled.img`
   margin: 0 auto 60px;
   src: url(${props => props.src});
   width: 137px;
+  margin-top: -185px;
 `
 
 const TimelineContainer = styled.div`

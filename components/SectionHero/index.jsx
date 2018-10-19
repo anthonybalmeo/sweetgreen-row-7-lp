@@ -10,6 +10,7 @@ import { SectionMobileInner, SectionDesktopInner } from '../Section'
 import { Mobile, TabletAndDesktop, Desktop } from '../MediaQueries'
 import { WhiteOutlineButton } from '../Button';
 import { YouTubeModal } from '../YoutubeModal';
+import { H1Large, H1, P } from '../TypeElements';
 
 const SectionDesktopHero = styled.div`
   height: 800px;
@@ -27,10 +28,8 @@ const SectionMobileHero = styled.div`
   overflow: hidden;
 `
 
-const Description = styled.p`
-  font-family: Gotham Book,sans-serif, sans-serif;
+const Description = styled(P)`
   color: white;
-  font-size: 16px;
   line-height: 32px;
   margin-top: 16px;
 `
@@ -83,6 +82,14 @@ const Video = styled.video`
 }
 `
 
+const H1LargeWhite = styled(H1Large)`
+  color: white;
+`
+
+const H1White = styled(H1)`
+  color: white;
+`
+
 const copy = `
 This season, we joined friend and food philosopher, Blue Hill chef Dan Barber, and his visionary seed
 company Row 7, in thinking differently about the origin of flavor in our food. The result: the first-ever
@@ -95,7 +102,9 @@ export const MobileHero = () =>
     </Video>
     <SectionMobileInner style={{ position: 'relative', zIndex: 2 }}>
       <SGRow7 src={sgRow7Logo} alt="" />
-      <FutureMobile src={future} alt="100,000 seeds. 6 farms. 1 quest to reimagine flavor. " />
+      <H1White>
+        100,000 seeds. 6 farms. 1 quest to reimagine flavor.
+      </H1White>
       <DescriptionMobile>
         {copy}
       </DescriptionMobile>
@@ -114,7 +123,9 @@ export const DesktopHero = () =>
     <SectionDesktopInner style={{ position: 'relative', zIndex: 2 }}>
       <Left>
         <img src={sgRow7Logo} alt="" />
-        <Future src={future} alt="100,000 seeds. 6 farms. 1 quest to reimagine flavor. " />
+        <H1LargeWhite>
+          100,000 seeds. 6 farms. 1 quest to reimagine flavor.
+        </H1LargeWhite>
         <Description>
           {copy}
         </Description>

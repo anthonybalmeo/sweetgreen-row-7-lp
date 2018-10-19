@@ -8,6 +8,7 @@ import { H1Mobile } from '../TypeElements'
 
 const RowLessTraveledContainer = styled.div`
   margin: 0 auto;
+  padding-bottom: 100px;
 
   & > img {
     display: block;
@@ -43,11 +44,6 @@ const RowLessTraveledListItem = styled.li`
   flex: 0 0 auto;
 `
 
-const RowLessTraveledTitle = styled.div`
-  font-size: 20px;
-  line-height: 32px;
-  margin-bottom: 10px;
-`
 const RowLessTraveledParagraph = styled.div`
   font-size: 16px;
   line-height: 32px;
@@ -76,7 +72,7 @@ export const RowLessTraveledMobile = ({ rowLessTraveledData }) =>
           rowLessTraveledData.map((data, i) => (
               <RowLessTraveledListItem key={i}>
                 <RowLessTraveledIndex>{i + 1}</RowLessTraveledIndex>
-                <RowLessTraveledTitle>{data.title}</RowLessTraveledTitle>
+                <RowLessTraveledParagraph>{data.title}</RowLessTraveledParagraph>
                 <RowLessTraveledParagraph>{data.paragraph}</RowLessTraveledParagraph>
               </RowLessTraveledListItem>
             ))

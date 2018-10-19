@@ -39,22 +39,7 @@ const CommunityImage = styled.img`
 
 export const CommunityDesktop = () =>
   <CommunityContainer>
-    <CommunityContent>
-      <CommunityBlock>
-        <CommunityImage src={grow} alt='Grow' />
-      </CommunityBlock>
-      <CommunityBlock>
-        <p>
-          At sweetgreen, we’re in the business of feeding people,
-          and we’re out to change what that means. A portion of
-          the proceeds from all koginut squash dishes in NYC will
-          help support GROWNYC. Through their Beginning Farmers Program,
-          Grow NYC trains the next generation of regional farmers through
-          mentorship with established farmers and strengthens rural communities,
-          farmers' markets and the region’s food system as a whole.
-        </p>
-      </CommunityBlock>
-    </CommunityContent>
+
     <CommunityContent>
       <CommunityBlock>
         <CommunityImage src={row7} alt='Row 7' />
@@ -71,5 +56,23 @@ export const CommunityDesktop = () =>
         </p>
       </CommunityBlock>
     </CommunityContent>
+
+    <CommunityContent>
+      <CommunityBlock>
+        <CommunityImage src={grow} alt='Grow' />
+      </CommunityBlock>
+      <CommunityBlock>
+        <p>
+          At sweetgreen, we’re in the business of feeding people,
+          and we’re out to change what that means. A portion of
+          the proceeds from all koginut squash dishes in NYC will
+          help support GROWNYC. Through their Beginning Farmers Program,
+          Grow NYC trains the next generation of regional farmers through
+          mentorship with established farmers and strengthens rural communities,
+          farmers' markets and the region’s food system as a whole.
+        </p>
+      </CommunityBlock>
+    </CommunityContent>
+
   </CommunityContainer>
 

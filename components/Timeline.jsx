@@ -2,7 +2,7 @@ import { MobileAndTablet, Desktop } from '../components/MediaQueries'
 import { TimelineDesktop } from './TimelineDesktop';
 import { TimelineMobile } from './TimelineMobile'
 
-import logo from '../assets/from-seed-to-sweetgreen.png'
+import logo from '../assets/from-seed-to-sweetgreen.svg'
 import chef from '../assets/chef.jpg'
 import cutSquash from '../assets/cut-squash.jpg'
 import hands from '../assets/hands.jpg'
@@ -18,8 +18,8 @@ import illustrationSquash from '../assets/illustration-seed.png'
 const timelineData = [
   {
     order: 'right-to-left offset-spacing-bottom',
-    title: 'February 27th: Row Seed Company launches',
-    paragraph: 'Among their offerings is Robin‘s Koginut squash, the result of years of field and kitchen co-selection by vegetable breeder Michael Mazourek and chef Dan Barber.',
+    title: 'February 26th: The call that started it all',
+    paragraph: 'sg co-founder Nic Jammet calls Dan Barber—an order for 100,000 squash seeds is placed. Row 7 Seed Company launches the next day.',
     image: null,
     illustrationImg: null,
   },
@@ -80,20 +80,6 @@ const timelineData = [
     order: 'right-to-left',
     title: 'July 6th: New York',
     paragraph: 'No flowers just yet at Pedersen Farm in New York, but growing well. Projected harvest date around mid-October to allow a little more time to “cure” and become sweeter in storage.',
-    image: null,
-    illustrationImg: null,
-  },
-  {
-    order: 'left-to-right',
-    title: 'July 17th: Los Angeles',
-    paragraph: 'Weiser Family Farm should be picking first planting around mid-August.',
-    image: null,
-    illustrationImg: null,
-  },
-  {
-    order: 'right-to-left',
-    title: 'July 25th: Chicago',
-    paragraph: 'Nichols Farm had a little bit of a wash out, but only a small percent of crop was affected. With the rain and heat, they still look great. Expected harvest date is September 1st.',
     image: null,
     illustrationImg: null,
   },

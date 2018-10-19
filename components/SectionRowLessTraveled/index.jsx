@@ -10,7 +10,7 @@ import { config } from '../../config'
 const rowLessTraveledData = [
   {
     title: 'Pedersen Farms (NY)',
-    paragraph: 'A Cornell Ag school graduate, Rick Pederson is a true soil farmer who believes growing healthy soil is the key to productive yields and great flavor.',
+    paragraph: 'A Cornell Ag school graduate, Rick Pedersen is a true soil farmer who believes growing healthy soil is the key to productive yields and great flavor.',
   },
   {
     title: 'Ward’s Berry Farm (MA)',
@@ -29,8 +29,8 @@ const rowLessTraveledData = [
     paragraph: 'Located on the outskirts of San Francisco, Tim Mueller’s organic crops thrive on 450 acres and provide seasonal food to his local community for over 25 years.',
   },
   {
-    title: 'Weiser Family Farm (CA)',
-    paragraph: 'Formerly an East L.A. chemistry teacher, Sid Weiser packed up his family in 1978 and moved to Northern California, where he’s dedicated to harvesting at peak ripeness.',
+    title: 'Weiser Family Farms (CA)',
+    paragraph: 'Formerly an East L.A. chemistry teacher, Sid Weiser packed up his family in 1978 and moved to Tehachapi, California, where he’s dedicated to harvesting at peak ripeness.',
   },
 ]
 
