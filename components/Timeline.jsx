@@ -24,19 +24,6 @@ const timelineData = [
     illustrationImg: null,
   },
   {
-    order: 'left-to-right',
-    title: 'March 16: Seeds Purchased',
-    paragraph: 'When we heard about the launch of Row 7, we purchased 100,000 seeds of their one-of-a-kind Robin’s Koginut Squash.',
-    image: {
-      url: seeds,
-      alt: 'March 16: Seeds Purchased - Seed',
-    },
-    illustrationImg: {
-      url: illustrationSeed,
-      alt: 'March 16: Seeds Purchased - Illustation Seed',
-    },
-  },
-  {
     order: 'right-to-left',
     title: 'May 15th: Seeds in the ground',
     paragraph: 'Koginut squash seeds are sowed on six different farms—in six different climates and ecosystems across the country.',
@@ -45,19 +32,6 @@ const timelineData = [
       alt: 'May 15th: Seeds in the ground - Hands',
     },
     illustrationImg: null,
-  },
-  {
-    order: 'left-to-right',
-    title: 'June 2nd: Sprouts begin to show',
-    paragraph: 'Feedback on germination is good. Leaves have emerged and farmers are preparing their fields for transplanting.',
-    image: {
-      url: plant,
-      alt: 'June 2nd: Sprouts begin to show - Plant',
-    },
-    illustrationImg: {
-      url: illustrationPlants,
-      alt: 'June 2nd: Sprouts begin to show - Illustation Plant',
-    },
   },
   {
     order: 'right-to-left',

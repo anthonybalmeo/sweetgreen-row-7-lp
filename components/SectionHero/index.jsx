@@ -79,7 +79,13 @@ const Video = styled.video`
       right: -10%;
       height: auto;
     }
-}
+  }
+
+  @media only screen and (min-width: 1100px) {
+    & {
+      width: 110%;
+    }
+  }
 `
 
 const H1LargeWhite = styled(H1Large)`

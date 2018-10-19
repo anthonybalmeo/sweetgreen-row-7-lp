@@ -5,6 +5,7 @@ import { config } from '../config'
 
 import { Header } from '../components/Header'
 import { SectionHero } from '../components/SectionHero'
+import { SectionBehindTheSeeds } from '../components/SectionBehindTheSeeds'
 import { Timeline } from '../components/Timeline'
 import { CommunitySection } from '../components/CommunitySection'
 import { Footer } from '../components/Footer'
@@ -21,6 +22,7 @@ export default () =>
   <React.Fragment>
     <Header />
     <SectionHero />
+    <SectionBehindTheSeeds/>
     <SectionRowLessTraveled />
     <Timeline />
     <BowlSection />
