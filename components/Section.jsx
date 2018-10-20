@@ -22,7 +22,7 @@ const SectionMobileWrapper = styled(SectionDesktopWrapper)`
 
 export const SectionDesktopInner = styled.div`
   max-width: ${desktopWrapperWidth};
-  width: 90%;
+  width: 100%;
   padding: 25px;
 `
 

@@ -12,18 +12,30 @@ import video3 from './video-3.jpg'
 
 const data = [
   {
-    title: 'The Future is Flavor - 6:07',
-    image: video1,
+    title: 'The Future is Flavor',
+    video: {
+      id: 'qyaNLm7Htsc',
+      length: '0:30',
+      image: video1
+    },
     description: 'Where is flavor born? Watch as we join forces with Dan Barber, and his visionary seed company Row 7, to think differently about the origin of flavor in our food.',
   },
   {
-    title: 'Flavor Profile: Dan Barber - 6:07',
-    image: video2,
+    title: 'Flavor Profile: Dan Barber',
+    video: {
+      id: 'ctnuWBhq0XY',
+      length: '1:29',
+      image: video2
+    },
     description: `Michelin-starred Chef, star of Netflix's Chef Table, author, and farm-to-table frontrunner Dan Barber on how millennial appetites for authenticity are shaping the future of food.`,
   },
   {
-    title: 'The Sweetgreen Supply Chain - 6:07',
-    image: video3,
+    title: 'The Sweetgreen Supply Chain',
+    video: {
+      id: 'giWg4pBAG2Q',
+      length: '1:19',
+      image: video3
+    },
     description: 'A behind the seeds look at the farmers and field operatives connecting people to real food at scale.',
   }
 ]
@@ -37,12 +49,15 @@ const VideoContainer = styled.div`
 `
 
 const VideoWrapper = styled.div`
-  width: 340px;
   margin-right: 20px;
 `
 
 const Image = styled.img`
-  width: 350px;
+  width: 250px;
+
+  @media only screen and (min-width: 600px) {
+    width: 350px;
+  }
 `
 
 const Title = styled.h2`
@@ -63,6 +78,8 @@ const Watch = styled.a`
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: ${config.colors.green};
+  cursor: pointer;
 `
 
 export const SectionBehindTheSeeds = () =>
@@ -74,10 +91,10 @@ export const SectionBehindTheSeeds = () =>
     <VideoContainer>
       {
         data.map(v => <VideoWrapper>
-          <YouTubeModal id='t5JuuZ6thXk'><Image src={v.image}/></YouTubeModal>
-          <Title>{v.title}</Title>
+          <YouTubeModal id={v.video.id}><Image src={v.video.image}/></YouTubeModal>
+          <Title>{v.title} - {v.video.length}</Title>
           <Description>{v.description}</Description>
-          <YouTubeModal><Watch>Watch</Watch></YouTubeModal>
+          <YouTubeModal id={v.video.id}><Watch>Watch</Watch></YouTubeModal>
         </VideoWrapper>)
       }
     </VideoContainer>

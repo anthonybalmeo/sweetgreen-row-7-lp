@@ -47,7 +47,7 @@ export const Header = () =>
     <TabletAndDesktop>
       <LinkWrapper>
         <Desktop>
-          <A href="#partners">Farmer Partners</A>
+          <A href="#farm-partnership">Farmer Partners</A>
           <A href="#seed-to-sweetgreen">Seed to Sweetgreen</A>
           <A href="#bowl-section">The Bowl</A>
           <A href="#dan-barber">Dan Barber Letter</A>

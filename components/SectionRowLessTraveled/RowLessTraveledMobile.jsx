@@ -40,7 +40,7 @@ const RowLessTraveledListItem = styled.li`
   margin-right: 10px;;
   float: left;
   display: inline-block;
-  width: 260px;
+  width: 250px;
   flex: 0 0 auto;
 `
 
