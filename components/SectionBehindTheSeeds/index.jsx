@@ -60,8 +60,8 @@ const Image = styled.img`
   }
 `
 
-const Title = styled.h2`
-  font-family: Gotham Book;
+const Title = styled.p`
+  font-family: Gotham Medium;
   color: #707070;
   font-size: 16px;
 `

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { config } from '../config'
 
 export const H1 = styled.h1`
-  font-family: 'Gotham Book';
+  font-family: 'Gotham Black';
   color: ${config.colors.green};
   font-size: 32px;
   letter-spacing: 4px;
@@ -12,7 +12,7 @@ export const H1 = styled.h1`
 `
 
 export const H1Large = styled.h1`
-  font-family: 'Gotham Book';
+  font-family: 'Gotham Black';
   color: ${config.colors.green};
   font-size: 40px;
   letter-spacing: 4px;
@@ -22,7 +22,7 @@ export const H1Large = styled.h1`
 `
 
 export const H1Mobile = styled(H1)`
-  font-family: 'Gotham Book';
+  font-family: 'Gotham Black';
   color: ${config.colors.green};
   font-size: 32px;
   letter-spacing: 4px;

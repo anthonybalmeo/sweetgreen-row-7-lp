@@ -39,7 +39,7 @@ const DescriptionMobile = styled(Description)`
 `
 
 const Left = styled.div`
-  width: 440px;
+  width: 450px;
 `
 
 const Future = styled.img`
@@ -64,6 +64,10 @@ const Play = styled.img`
 
 const Spacer = styled.div`
   height: 70px;
+`
+
+const SpacerMed = styled.div`
+  height: 32px;
 `
 
 const Video = styled.video`
@@ -98,8 +102,9 @@ const H1White = styled(H1)`
 
 const copy = `
 This season, we joined friend and food philosopher, Blue Hill chef Dan Barber, and his visionary seed
-company Row 7, in thinking differently about the origin of flavor in our food. The result: the first-ever
-seed-to-sweetgreen experience and a special Row 7 squash bred for flavor. In stores 11/1.`
+company Row 7, in thinking differently about the origin of flavor in our food. The result: the
+first-ever seed-to-sweetgreen experience and an exceptional Row 7 squash bred for flavor.
+In stores 11/1.`
 
 export const MobileHero = () =>
   <SectionMobileHero>
@@ -109,11 +114,12 @@ export const MobileHero = () =>
     <SectionMobileInner style={{ position: 'relative', zIndex: 2 }}>
       <SGRow7 src={sgRow7Logo} alt="" />
       <H1White>
-        100,000 seeds. 6 farms. 1 quest to reimagine flavor.
+        100,000 seeds. <br/> 6 farms. 1 quest to reimagine flavor.
       </H1White>
       <DescriptionMobile>
         {copy}
       </DescriptionMobile>
+      <SpacerMed />
       <YouTubeModal id='t5JuuZ6thXk'>
         <WhiteOutlineButton style={{ width: '140px' }}>Watch The Film</WhiteOutlineButton>
       </YouTubeModal>
@@ -130,7 +136,7 @@ export const DesktopHero = () =>
       <Left>
         <img src={sgRow7Logo} alt="" />
         <H1LargeWhite>
-          100,000 seeds. 6 farms. 1 quest to reimagine flavor.
+          100,000 seeds. <br/> 6 farms. 1 quest to reimagine flavor.
         </H1LargeWhite>
         <Description>
           {copy}

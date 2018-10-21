@@ -16,6 +16,8 @@ import { BowlSection } from '../components/BowlSection'
 
 import SweetlifeMedium from '../assets/fonts/Sweetlife-Medium.woff2'
 import GothamBook from '../assets/fonts/Gotham-Book.woff2'
+import GothamMedium from '../assets/fonts/Gotham-Medium.woff2'
+import GothamBlack from '../assets/fonts/Gotham-Black.woff2'
 import FlamaCondensed from '../assets/fonts/FlamaCondensed-Medium.woff2'
 
 export default () =>
@@ -65,6 +67,20 @@ injectGlobal`
   @font-face {
     font-family: 'Gotham Book';
     src: url('${GothamBook}') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gotham Medium';
+    src: url('${GothamMedium}') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gotham Black';
+    src: url('${GothamBlack}') format('woff2');
     font-weight: normal;
     font-style: normal;
   }

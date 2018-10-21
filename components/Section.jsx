@@ -28,7 +28,7 @@ export const SectionDesktopInner = styled.div`
 
 export const SectionMobileInner = styled.div`
   padding: 25px;
-  width: 85%;
+  width: 95%;
   min-width: ${mobileWrapperWidth};
 `
 
