@@ -17,7 +17,7 @@ const BowlColumns = styled.div`
   width: 100%;
 
   & > h1 {
-    font-family: 'Gotham Book';
+    font-family: 'Gotham Black';
     color: ${config.colors.green};
     font-size: 24px;
     letter-spacing: 2px;
