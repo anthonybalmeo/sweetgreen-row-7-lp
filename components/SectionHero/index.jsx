@@ -79,15 +79,14 @@ const Video = styled.video`
 
   @media only screen and (min-width: 600px) {
     & {
-      left: -10%;
-      right: -10%;
+      left: auto;
       height: auto;
     }
   }
 
   @media only screen and (min-width: 1100px) {
     & {
-      width: 110%;
+      width: 100%;
     }
   }
 `
