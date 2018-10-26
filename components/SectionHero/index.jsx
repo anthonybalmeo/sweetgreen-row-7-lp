@@ -100,10 +100,7 @@ const H1White = styled(H1)`
 `
 
 const copy = `
-This season, we joined friend and food philosopher, Blue Hill chef Dan Barber, and his visionary seed
-company Row 7, in thinking differently about the origin of flavor in our food. The result: the
-first-ever seed-to-sweetgreen experience and an exceptional Row 7 squash bred for flavor.
-In stores 11/1.`
+This season, we joined Blue Hill chef Dan Barber and seed company Row 7 in thinking differently about the origin of flavor in our food. The result: the first-ever seed-to-sweetgreen experience and an exceptional Row 7 squash bred for flavor. In stores 11/1.`
 
 export const MobileHero = () =>
   <SectionMobileHero>
