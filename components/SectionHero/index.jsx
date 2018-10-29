@@ -115,13 +115,12 @@ export const MobileHero = () =>
       <H1White style={zStyle}>
         100,000 seeds. <br/> 6 farms. 1 quest to reimagine flavor.
       </H1White>
-      <DescriptionMobile style={zStyle}>
-        {copy}
-      </DescriptionMobile >
-      <SpacerMed />
       <YouTubeModal id='VHsOTo6BEJM'>
         <WhiteOutlineButton style={{ width: '140px', ...zStyle }}>Watch The Film</WhiteOutlineButton>
       </YouTubeModal>
+      <DescriptionMobile style={zStyle}>
+        {copy}
+      </DescriptionMobile >
     </SectionMobileInner>
   </SectionMobileHero>
 
@@ -137,12 +136,12 @@ export const DesktopHero = () =>
         <H1LargeWhite style={zStyle}>
           100,000 seeds. <br/> 6 farms. 1 quest to reimagine flavor.
         </H1LargeWhite>
-        <Description style={zStyle}>
-          {copy}
-        </Description>
         <YouTubeModal id='VHsOTo6BEJM'>
           <WhiteOutlineButton style={{ width: '140px', ...zStyle }}>Watch The Film</WhiteOutlineButton>
         </YouTubeModal>
+        <Description style={zStyle}>
+          {copy}
+        </Description>
       </Left>
 
       <Desktop>
