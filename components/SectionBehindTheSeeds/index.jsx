@@ -14,7 +14,7 @@ const data = [
   {
     title: 'The Future is Flavor',
     video: {
-      id: 'qyaNLm7Htsc',
+      id: 'dJVJzleHNq4',
       length: '0:30',
       image: video1
     },
