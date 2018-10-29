@@ -15,7 +15,7 @@ const data = [
     title: 'The Future is Flavor',
     video: {
       id: 'dJVJzleHNq4',
-      length: '0:30',
+      length: '4:13',
       image: video1
     },
     description: 'Where is flavor born? Watch as we join forces with Dan Barber, and his visionary seed company Row 7, to think differently about the origin of flavor in our food.',
