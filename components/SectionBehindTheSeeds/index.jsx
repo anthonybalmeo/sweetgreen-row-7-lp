@@ -50,6 +50,10 @@ const VideoContainer = styled.div`
 
 const VideoWrapper = styled.div`
   margin-right: 20px;
+
+  &:last-child {
+    padding-right: 25px;
+  }
 `
 
 const Image = styled.img`
@@ -82,8 +86,14 @@ const Watch = styled.a`
   cursor: pointer;
 `
 
+const StyledSectionDesktop = styled(SectionDesktop)`
+  .inner {
+    padding-right: 0;
+  }
+`
+
 export const SectionBehindTheSeeds = () =>
-  <SectionDesktop>
+  <StyledSectionDesktop>
     <SectionHeader>
       Behind the Seeds
     </SectionHeader>
@@ -98,4 +108,4 @@ export const SectionBehindTheSeeds = () =>
         </VideoWrapper>)
       }
     </VideoContainer>
-  </SectionDesktop>
+  </StyledSectionDesktop>

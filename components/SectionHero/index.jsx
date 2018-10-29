@@ -102,22 +102,25 @@ const H1White = styled(H1)`
 const copy = `
 This season, we joined Blue Hill chef Dan Barber and seed company Row 7 in thinking differently about the origin of flavor in our food. The result: the first-ever seed-to-sweetgreen experience and an exceptional Row 7 squash bred for flavor. In stores 11/1.`
 
+
+const zStyle = { position: 'relative', zIndex: 2 }
+
 export const MobileHero = () =>
   <SectionMobileHero>
     <Video autoPlay muted loop playsInline>
       <source src='/static/farm.mp4' type="video/mp4" />
     </Video>
-    <SectionMobileInner style={{ position: 'relative', zIndex: 2 }}>
-      <SGRow7 src={sgRow7Logo} alt="" />
-      <H1White>
+    <SectionMobileInner>
+      <SGRow7 src={sgRow7Logo} alt="" style={zStyle}/>
+      <H1White style={zStyle}>
         100,000 seeds. <br/> 6 farms. 1 quest to reimagine flavor.
       </H1White>
-      <DescriptionMobile>
+      <DescriptionMobile style={zStyle}>
         {copy}
-      </DescriptionMobile>
+      </DescriptionMobile >
       <SpacerMed />
       <YouTubeModal id='VHsOTo6BEJM'>
-        <WhiteOutlineButton style={{ width: '140px' }}>Watch The Film</WhiteOutlineButton>
+        <WhiteOutlineButton style={{ width: '140px', ...zStyle }}>Watch The Film</WhiteOutlineButton>
       </YouTubeModal>
     </SectionMobileInner>
   </SectionMobileHero>
@@ -128,23 +131,23 @@ export const DesktopHero = () =>
       <source src='/static/farm.mp4' type="video/mp4" />
     </Video>
 
-    <SectionDesktopInner style={{ position: 'relative', zIndex: 2 }}>
+    <SectionDesktopInner>
       <Left>
-        <img src={sgRow7Logo} alt="" />
-        <H1LargeWhite>
+        <img src={sgRow7Logo} alt="" style={zStyle}/>
+        <H1LargeWhite style={zStyle}>
           100,000 seeds. <br/> 6 farms. 1 quest to reimagine flavor.
         </H1LargeWhite>
-        <Description>
+        <Description style={zStyle}>
           {copy}
         </Description>
         <YouTubeModal id='VHsOTo6BEJM'>
-          <WhiteOutlineButton style={{ width: '140px' }}>Watch The Film</WhiteOutlineButton>
+          <WhiteOutlineButton style={{ width: '140px', ...zStyle }}>Watch The Film</WhiteOutlineButton>
         </YouTubeModal>
       </Left>
 
       <Desktop>
         <YouTubeModal id='VHsOTo6BEJM'>
-          <Play src={play} className='play' />
+          <Play src={play} className='play' style={{ zIndex: 2 }}/>
         </YouTubeModal>
       </Desktop>
 

@@ -2,6 +2,7 @@ import React from 'react'
 import { RowLessTraveledDesktop } from './RowLessTraveledDesktop'
 import { RowLessTraveledMobile } from './RowLessTraveledMobile'
 import { Desktop, MobileAndTablet } from '../../components/MediaQueries'
+import styled from 'styled-components'
 
 import { SectionDesktop } from '../Section'
 import { SectionHeader } from '../SectionHeader'
@@ -34,8 +35,14 @@ const rowLessTraveledData = [
   },
 ]
 
+const StyledSectionDesktop = styled(SectionDesktop)`
+  .inner {
+    padding-right: 0;
+  }
+`
+
 export const SectionRowLessTraveled = () =>
-  <SectionDesktop bg='white' id="farm-partnership">
+  <StyledSectionDesktop bg='white' id="farm-partnership">
     <SectionHeader>
       The Row Less Traveled
     </SectionHeader>
@@ -45,4 +52,4 @@ export const SectionRowLessTraveled = () =>
     <Desktop>
       <RowLessTraveledDesktop rowLessTraveledData={rowLessTraveledData} />
     </Desktop>
-  </SectionDesktop>
+  </StyledSectionDesktop>

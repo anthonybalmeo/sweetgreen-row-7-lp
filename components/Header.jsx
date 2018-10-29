@@ -37,7 +37,7 @@ const HeaderStyles = styled.header`
   justify-content: space-between;
   display: flex;
   padding: 20px;
-  z-index: 9999;
+  z-index: 99;
 `
 
 export const Header = () =>

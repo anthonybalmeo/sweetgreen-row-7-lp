@@ -34,7 +34,7 @@ export const SectionMobileInner = styled.div`
 
 export const SectionDesktop = ({ bg, children, className, id }) =>
   <SectionDesktopWrapper bg={bg} className={className} id={id}>
-    <SectionDesktopInner>
+    <SectionDesktopInner className='inner'>
       {children}
     </SectionDesktopInner>
   </SectionDesktopWrapper>

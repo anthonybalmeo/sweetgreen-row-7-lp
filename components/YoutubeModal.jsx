@@ -12,15 +12,25 @@ export const Closer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 200;
 `
 
 const Video = styled.iframe`
-  margin: 5%;
-  height:48%;
-  width:64%;
+  height:85%;
+  width:85%;
   border: none;
   box-shadow: 0 5px 36px black;
+`
+
+const Close = styled.div`
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-family: 'Gotham Medium';
+  z-index: 250;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
 `
 
 export class YouTubeModal extends React.Component {
@@ -44,6 +54,9 @@ export class YouTubeModal extends React.Component {
       {
         this.state.showModal && <>
           <Closer onClick={() => this.closeModal()} >
+            <Close>
+              CLOSE
+            </Close>
             <Video allowFullScreen="allowFullScreen" type="text/html" src={`https://www.youtube.com/embed/${this.props.id}?autoplay=1`} frameBorder="0" />
           </Closer>
         </>
