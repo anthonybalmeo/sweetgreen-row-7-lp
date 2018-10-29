@@ -136,12 +136,12 @@ export const DesktopHero = () =>
         <H1LargeWhite style={zStyle}>
           100,000 seeds. <br/> 6 farms. 1 quest to reimagine flavor.
         </H1LargeWhite>
-        <YouTubeModal id='VHsOTo6BEJM'>
-          <WhiteOutlineButton style={{ width: '140px', ...zStyle }}>Watch The Film</WhiteOutlineButton>
-        </YouTubeModal>
         <Description style={zStyle}>
           {copy}
         </Description>
+        <YouTubeModal id='VHsOTo6BEJM'>
+          <WhiteOutlineButton style={{ width: '140px', ...zStyle }}>Watch The Film</WhiteOutlineButton>
+        </YouTubeModal>
       </Left>
 
       <Desktop>
