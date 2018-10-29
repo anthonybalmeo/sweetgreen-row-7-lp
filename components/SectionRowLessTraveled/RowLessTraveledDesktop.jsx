@@ -40,7 +40,8 @@ const RowLessTraveledTripleColumn = styled.div`
 `
 
 const RowLessTraveledTitle = styled.div`
-  font-size: 20px;
+  font-family: "Gotham Medium";
+  font-size: 16px;
   line-height: 32px;
   margin-bottom: 10px;
 `
