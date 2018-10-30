@@ -74,18 +74,24 @@ const Video = styled.video`
   position: absolute;
   top: 0;
   height: 100%;
-  left: -20%;
+  left: -340px;
   z-index: 1;
+
+  @media only screen and (min-width: 500px) {
+    & {
+      left: -20%;
+    }
+  }
 
   @media only screen and (min-width: 600px) {
     & {
       left: auto;
-      height: auto;
     }
   }
 
-  @media only screen and (min-width: 1100px) {
+  @media only screen and (min-width: 1500px) {
     & {
+      height: auto;
       width: 100%;
     }
   }
