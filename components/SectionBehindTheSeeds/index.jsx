@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import { config } from '../../config'
+import Link from 'next/link'
 
 import { SectionDesktop } from '../Section'
 import { SectionHeader } from '../SectionHeader'
@@ -19,6 +20,7 @@ const data = [
       image: video1
     },
     description: 'Where is flavor born? Watch as we join forces with Dan Barber, and his visionary seed company Row 7, to think differently about the origin of flavor in our food.',
+    link: '/video?id=dJVJzleHNq4',
   },
   {
     title: 'Flavor Profile: Dan Barber',
@@ -28,6 +30,7 @@ const data = [
       image: video2
     },
     description: `Michelin-starred Chef, star of Netflix's Chef Table, author, and farm-to-table frontrunner Dan Barber on how millennial appetites for authenticity are shaping the future of food.`,
+    link: '/video?id=ctnuWBhq0XY',
   },
   {
     title: 'The Sweetgreen Supply Chain',
@@ -37,6 +40,7 @@ const data = [
       image: video3
     },
     description: 'A behind the seeds look at the farmers and field operatives connecting people to real food at scale.',
+    link: '/video?id=giWg4pBAG2Q',
   }
 ]
 
@@ -57,6 +61,7 @@ const VideoWrapper = styled.div`
 `
 
 const Image = styled.img`
+  cursor: pointer;
   width: 250px;
 
   @media only screen and (min-width: 600px) {
@@ -101,10 +106,10 @@ export const SectionBehindTheSeeds = () =>
     <VideoContainer>
       {
         data.map(v => <VideoWrapper>
-          <YouTubeModal id={v.video.id}><Image src={v.video.image}/></YouTubeModal>
+          <Link href={v.link}><Image src={v.video.image}/></Link>
           <Title>{v.title} - {v.video.length}</Title>
           <Description>{v.description}</Description>
-          <YouTubeModal id={v.video.id}><Watch>Watch</Watch></YouTubeModal>
+          <Link href={v.link}><Watch>Watch</Watch></Link>
         </VideoWrapper>)
       }
     </VideoContainer>

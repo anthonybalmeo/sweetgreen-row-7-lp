@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import sgRow7Logo from './sg-row-7-logo.svg'
 import future from './100.svg'
 import play from '../../assets/play.svg'
+import Link from 'next/link'
 
 import { SectionMobileInner, SectionDesktopInner } from '../Section'
 
@@ -121,9 +122,9 @@ export const MobileHero = () =>
       <H1White style={zStyle}>
         100,000 seeds. <br/> 6 farms. 1 quest to reimagine flavor.
       </H1White>
-      <YouTubeModal id='VHsOTo6BEJM'>
+      <Link href='/video?id=VHsOTo6BEJM'>
         <WhiteOutlineButton style={{ width: '140px', ...zStyle }}>Watch The Film</WhiteOutlineButton>
-      </YouTubeModal>
+      </Link>
       <DescriptionMobile style={zStyle}>
         {copy}
       </DescriptionMobile >
@@ -145,15 +146,15 @@ export const DesktopHero = () =>
         <Description style={zStyle}>
           {copy}
         </Description>
-        <YouTubeModal id='VHsOTo6BEJM'>
+          <Link href='/video?id=VHsOTo6BEJM'>
           <WhiteOutlineButton style={{ width: '140px', ...zStyle }}>Watch The Film</WhiteOutlineButton>
-        </YouTubeModal>
+          </Link>
       </Left>
 
       <Desktop>
-        <YouTubeModal id='VHsOTo6BEJM'>
+        <Link href='/video?id=VHsOTo6BEJM'>
           <Play src={play} className='play' style={{ zIndex: 2 }}/>
-        </YouTubeModal>
+        </Link>
       </Desktop>
 
     </SectionDesktopInner>
